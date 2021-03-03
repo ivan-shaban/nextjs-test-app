@@ -1,4 +1,7 @@
 {
+  "lobby.description": "(This is a sample website - you’ll be building a site like this in <a>our Next.js tutorial</a>.)",
+  "lobby.header": "Blog",
+  "lobby.introduction": "[Your Self Introduction]",
   "login.start_game": "Start game!",
   "login.welcome": "Welcome, {username}!",
   "login.your_name": "your name"

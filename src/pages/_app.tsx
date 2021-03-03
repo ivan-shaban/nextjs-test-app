@@ -1,8 +1,42 @@
 import '../styles/global.css'
-import { AppProps } from 'next/app'
+import App, { AppProps } from 'next/app'
+import { IntlProvider } from 'react-intl'
+import React from 'react'
 
-export default function App({
-    Component, pageProps,
-}: AppProps) {
-    return <Component {...pageProps} />
+import { getLocaleMessages } from '../lib/intl'
+
+export interface AppExtendedProps {
+    readonly messages: any
+    readonly locale: string
+    readonly defaultLocale: string
 }
+
+export default function MyApp({
+    Component, pageProps, messages, locale, defaultLocale,
+}: AppProps & AppExtendedProps) {
+    return (
+        <IntlProvider
+            locale={locale}
+            defaultLocale={defaultLocale}
+            messages={messages}
+        >
+            <Component {...pageProps} />
+        </IntlProvider>
+    )
+}
+
+const getInitialProps: typeof App.getInitialProps = async (appContext) => {
+    const [{ default: messages }, props] = await Promise.all([
+        getLocaleMessages(appContext.router.locale),
+        App.getInitialProps(appContext),
+    ])
+
+    return {
+        ...props,
+        locale: appContext.router.locale,
+        defaultLocale: appContext.router.defaultLocale,
+        messages,
+    };
+};
+
+MyApp.getInitialProps = getInitialProps;

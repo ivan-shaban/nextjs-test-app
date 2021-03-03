@@ -1,4 +1,7 @@
 {
+  "lobby.description": "(Это образец веб-сайта - вы создадите такой сайт в <a> нашем руководстве по Next.js </a>.)",
+  "lobby.header": "Блог",
+  "lobby.introduction": "[Представтесь]",
   "login.start_game": "Начать игру!",
   "login.welcome": "Добро пожаловать, {username}!",
   "login.your_name": "ваше имя"

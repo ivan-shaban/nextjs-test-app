@@ -1,5 +1,3 @@
-import { IntlProvider } from 'react-intl'
-import { GetStaticProps } from 'next'
 import {
     TextField,
     Typography,
@@ -19,17 +17,10 @@ import {
     WELCOME_MESSAGE,
     YOUR_NAME,
 } from '../components/pages/Login/translations'
-import { getLocaleMessages } from '../lib/intl'
-import { ScreenCenteredContentView } from '../components/pages/Base/BaseView'
+import { Layout } from '../components/pages/Base/BaseView'
 import styles from '../components/pages/Login/LoginView.module.css'
 import { reservePath } from '../components/helpers/routers'
 import { Routes } from '../components/constants/routes'
-
-export interface Props {
-    readonly messages: any
-    readonly locale: string
-    readonly defaultLocale: string
-}
 
 export interface State {
     readonly username: string;
@@ -38,26 +29,12 @@ export interface State {
     readonly isSnackbarOpen: boolean;
 }
 
-export const getStaticProps: GetStaticProps<Props> = async ({
-    locale, defaultLocale,
-}) => {
-    const messages = await getLocaleMessages(locale)
-
-    return {
-        props: {
-            messages,
-            locale,
-            defaultLocale,
-        },
-    }
-}
-
 const snackbarPosition: SnackbarOrigin = {
     vertical: 'bottom',
     horizontal: 'right',
 }
 
-export class LoginView extends React.PureComponent<Props & WithRouterProps, State> {
+export class LoginView extends React.PureComponent<WithRouterProps, State> {
     state: State = {
         username: '',
         invalidName: false,
@@ -137,46 +114,40 @@ export class LoginView extends React.PureComponent<Props & WithRouterProps, Stat
         ]
 
         return (
-            <IntlProvider
-                locale={this.props.locale}
-                defaultLocale={this.props.defaultLocale}
-                messages={this.props.messages}
-            >
-                <ScreenCenteredContentView>
-                    <div className={styles.form}>
-                        <div className={styles.texts}>
-                            <Typography
-                                className={styles.title}
-                                variant="body2"
-                                component="div"
-                            >
-                                {WELCOME_MESSAGE(input)}
-                            </Typography>
-                        </div>
-                        <Button
-                            className={styles.loginButton}
-                            color="secondary"
-                            onClick={this.handleLoginClick}
+            <Layout isCentered={true}>
+                <div className={styles.form}>
+                    <div className={styles.texts}>
+                        <Typography
+                            className={styles.title}
+                            variant="body2"
+                            component="div"
                         >
-                            {START_GAME}
-                        </Button>
+                            {WELCOME_MESSAGE(input)}
+                        </Typography>
                     </div>
-                    <Snackbar
-                        anchorOrigin={snackbarPosition}
-                        key={this.state.reason}
-                        open={this.state.isSnackbarOpen}
-                        onClose={this.handleSnackbarClose}
-                        autoHideDuration={6000}
+                    <Button
+                        className={styles.loginButton}
+                        color="secondary"
+                        onClick={this.handleLoginClick}
                     >
-                        <SnackbarContent
-                            className={styles.snackbarContent}
-                            aria-describedby="client-snackbar"
-                            message={snackMessage}
-                            action={snackAction}
-                        />
-                    </Snackbar>
-                </ScreenCenteredContentView>
-            </IntlProvider>
+                        {START_GAME}
+                    </Button>
+                </div>
+                <Snackbar
+                    anchorOrigin={snackbarPosition}
+                    key={this.state.reason}
+                    open={this.state.isSnackbarOpen}
+                    onClose={this.handleSnackbarClose}
+                    autoHideDuration={6000}
+                >
+                    <SnackbarContent
+                        className={styles.snackbarContent}
+                        aria-describedby="client-snackbar"
+                        message={snackMessage}
+                        action={snackAction}
+                    />
+                </Snackbar>
+            </Layout>
         )
     }
 }

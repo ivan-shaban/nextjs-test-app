@@ -36,8 +36,17 @@ export default function Post({ postData }: {
 }
 
 // eslint-disable-next-line @typescript-eslint/require-await
-export const getStaticPaths: GetStaticPaths = async () => {
-    const paths = getAllPostIds()
+export const getStaticPaths: GetStaticPaths = async (props) => {
+    const paths = getAllPostIds().reduce((result, value) => {
+        props.locales.forEach((locale) => {
+            result.push({
+                ...value,
+                locale,
+            })
+        })
+
+        return result
+    }, [])
 
     return {
         paths,

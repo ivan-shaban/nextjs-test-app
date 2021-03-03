@@ -1,14 +1,14 @@
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 import classNames from 'classnames'
 
 import styles from './BaseView.module.css'
 
-// eslint-disable-next-line react/prop-types
-export const ScreenView: React.FC = ({ children }) => (
-    <div className={styles.base}>{children}</div>
-)
+export interface Props {
+    readonly isCentered?: boolean
+}
 
-// eslint-disable-next-line react/prop-types
-export const ScreenCenteredContentView: React.FC = ({ children }) => (
-    <div className={classNames(styles.base, styles.withCenteredContent)}>{children}</div>
+export const Layout: React.FC<PropsWithChildren<Props>> = ({
+    isCentered, children,
+}) => (
+    <div className={classNames(styles.base, { [styles.withCenteredContent]: isCentered })}>{children}</div>
 )

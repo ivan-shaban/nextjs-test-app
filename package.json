@@ -12,7 +12,7 @@
     "build": "next build",
     "prestart": "yarn --network-timeout 100000",
     "start": "next start",
-    "build:translations": "formatjs extract \"src/**/translations.tsx\" --format simple --out-file public/translations/ru-RU.json"
+    "build:translations": "formatjs extract \"src/**/translations.tsx\" --format simple --out-file public/translations/ru.json"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.3",
