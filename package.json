@@ -4,15 +4,15 @@
   "private": true,
   "scripts": {
     "check:types": "tsc --noEmit",
-    "check:eslint": "eslint {components,lib,pages,posts}/**/*.{ts,tsx}",
+    "check:eslint": "eslint src/**/*.{ts,tsx}",
     "fix:eslint": "yarn check:eslint --fix",
-    "predev": "yarn",
+    "predev": "yarn --network-timeout 100000",
     "dev": "next dev",
-    "prebuild": "yarn",
+    "prebuild": "yarn --network-timeout 100000",
     "build": "next build",
-    "prestart": "yarn",
+    "prestart": "yarn --network-timeout 100000",
     "start": "next start",
-    "build:translations": "formatjs extract \"{components,pages}/**/translations.tsx\" --format simple --out-file public/translations/ru-RU.json"
+    "build:translations": "formatjs extract \"src/**/translations.tsx\" --format simple --out-file public/translations/ru-RU.json"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.3",
