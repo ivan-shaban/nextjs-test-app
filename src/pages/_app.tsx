@@ -2,8 +2,10 @@ import '../styles/global.css'
 import App, { AppProps } from 'next/app'
 import { IntlProvider } from 'react-intl'
 import React from 'react'
+import { ThemeProvider } from '@material-ui/core'
 
 import { getLocaleMessages } from '../lib/intl'
+import { theme } from '../components/theme'
 
 export interface AppExtendedProps {
     readonly messages: any
@@ -20,7 +22,9 @@ export default function MyApp({
             defaultLocale={defaultLocale}
             messages={messages}
         >
-            <Component {...pageProps} />
+            <ThemeProvider theme={theme}>
+                <Component {...pageProps} />
+            </ThemeProvider>
         </IntlProvider>
     )
 }
