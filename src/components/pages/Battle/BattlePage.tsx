@@ -4,7 +4,7 @@ import React from 'react'
 
 import { Layout } from '../../Layout/Layout'
 import styles from '../Lobby/LobbyPage.module.css'
-import { LOGOUT } from '../Lobby/translations'
+import { LOGOUT } from '../../LobbyHeader/translations'
 
 import { BATTLE_TITLE } from './translations'
 

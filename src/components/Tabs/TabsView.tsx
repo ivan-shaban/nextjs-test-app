@@ -9,6 +9,7 @@ export interface TabData {
     readonly link: string;
     readonly id: string;
     readonly title: JSX.Element
+    readonly disabled?: boolean
 }
 
 export interface Props {
@@ -28,12 +29,13 @@ export const TabsView: React.FC<Props> = ({ data }) => {
             onChange={handleChange}
         >
             {data.map(({
-                id, title,
+                id, title, disabled,
             }) => (
                 <Tab label={title}
                     key={`lobby-tab-${id}`}
                     id={`lobby-tab-${id}`}
                     aria-controls={`simple-tabpanel-${id}`}
+                    disabled={disabled}
                 />
             ))}
         </Tabs>

@@ -1,25 +1,27 @@
 import Button from '@material-ui/core/Button'
-import { signOut } from 'next-auth/client'
 import React from 'react'
+import { useRouter } from 'next/router'
 
 import { Layout } from '../../Layout/Layout'
-import styles from '../Lobby/LobbyPage.module.css'
-import { LOGOUT } from '../Lobby/translations'
+import { BACK_BUTTON } from '../Settings/translations'
 
+import styles from './ProfilePage.module.css'
 import { PROFILE_TITLE } from './translations'
 
 export function ProfilePage() {
-    const handleLogoutClick = () =>
-        signOut()
+    const router = useRouter()
+    const handleBackClick = () =>
+        router.back()
 
     return (
         <Layout isCentered={true}>
             <Button
-                className={styles.logoutButton}
+                className={styles.backButton}
                 color="secondary"
-                onClick={handleLogoutClick}
+                size="large"
+                onClick={handleBackClick}
             >
-                {LOGOUT}
+                {BACK_BUTTON}
             </Button>
             <h1 className={'upper'}>{PROFILE_TITLE}</h1>
         </Layout>
