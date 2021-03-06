@@ -6,7 +6,12 @@ export enum SECTIONS {
 }
 
 export enum SUB_SECTIONS {
+    MAIN = 'main',
     PROFILE = 'profile',
+    HEROES = 'heroes',
+    STORE = 'store',
+    LEARN = 'learn',
+    WAITING = 'waiting',
 }
 
 export enum Routes {

@@ -1,8 +1,19 @@
 {
-  "lobby.description": "(Это образец веб-сайта - вы создадите такой сайт в <a> нашем руководстве по Next.js </a>.)",
-  "lobby.header": "Блог",
-  "lobby.introduction": "[Представтесь]",
+  "battle.title": "ИГРА",
+  "heroes.title": "ГЕРОИ",
+  "learn.title": "ИЗУЧИТЬ",
+  "lobby.button.find_game": "Начать поиск...",
+  "lobby.button.logout": "Выйти",
+  "lobby.tab.heroes_title": "Герои",
+  "lobby.tab.learn_title": "Изучить",
+  "lobby.tab.main_title": "Главная",
+  "lobby.tab.store_title": "Магазин",
+  "lobby.title": "ГЛАВНАЯ",
   "login.start_game": "Начать игру!",
   "login.welcome": "Добро пожаловать, {username}!",
-  "login.your_name": "ваше имя"
+  "login.your_name": "ваше имя",
+  "profile.title": "ПРОФИЛЬ",
+  "store.title": "МАГАЗИН",
+  "waiting.button.cancel": "Отмена",
+  "waiting.title": "Ищем игру..."
 }

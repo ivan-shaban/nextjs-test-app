@@ -1,8 +1,19 @@
 {
-  "lobby.description": "(This is a sample website - you’ll be building a site like this in <a>our Next.js tutorial</a>.)",
-  "lobby.header": "Blog",
-  "lobby.introduction": "[Your Self Introduction]",
+  "battle.title": "BATTLE",
+  "heroes.title": "HEROES",
+  "learn.title": "LEARN",
+  "lobby.button.find_game": "Start search...",
+  "lobby.button.logout": "Logout",
+  "lobby.tab.heroes_title": "Heroes",
+  "lobby.tab.learn_title": "Learn",
+  "lobby.tab.main_title": "Main",
+  "lobby.tab.store_title": "Store",
+  "lobby.title": "ГЛАВНАЯ",
   "login.start_game": "Start game!",
   "login.welcome": "Welcome, {username}!",
-  "login.your_name": "your name"
+  "login.your_name": "your name",
+  "profile.title": "PROFILE",
+  "store.title": "STORE",
+  "waiting.button.cancel": "Cancel",
+  "waiting.title": "Looking for a game..."
 }

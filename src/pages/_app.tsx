@@ -3,6 +3,7 @@ import App, { AppProps } from 'next/app'
 import { IntlProvider } from 'react-intl'
 import React from 'react'
 import { ThemeProvider } from '@material-ui/core'
+import { Provider } from 'next-auth/client'
 
 import { getLocaleMessages } from '../lib/intl'
 import { theme } from '../components/theme'
@@ -17,15 +18,18 @@ export default function MyApp({
     Component, pageProps, messages, locale, defaultLocale,
 }: AppProps & AppExtendedProps) {
     return (
-        <IntlProvider
-            locale={locale}
-            defaultLocale={defaultLocale}
-            messages={messages}
-        >
-            <ThemeProvider theme={theme}>
-                <Component {...pageProps} />
-            </ThemeProvider>
-        </IntlProvider>
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+        <Provider session={pageProps.session}>
+            <IntlProvider
+                locale={locale}
+                defaultLocale={defaultLocale}
+                messages={messages}
+            >
+                <ThemeProvider theme={theme}>
+                    <Component {...pageProps} />
+                </ThemeProvider>
+            </IntlProvider>
+        </Provider>
     )
 }
 
@@ -40,7 +44,7 @@ const getInitialProps: typeof App.getInitialProps = async (appContext) => {
         locale: appContext.router.locale,
         defaultLocale: appContext.router.defaultLocale,
         messages,
-    };
-};
+    }
+}
 
-MyApp.getInitialProps = getInitialProps;
+MyApp.getInitialProps = getInitialProps

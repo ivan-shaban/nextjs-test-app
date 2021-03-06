@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from 'react'
 import classNames from 'classnames'
 
-import styles from './BaseView.module.css'
+import styles from './Layout.module.css'
 
 export interface Props {
     readonly isCentered?: boolean

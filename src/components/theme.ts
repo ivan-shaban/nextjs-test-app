@@ -1,13 +1,13 @@
 import { createMuiTheme } from '@material-ui/core/styles'
 import {
-    indigo,
+    blue,
     pink,
 } from '@material-ui/core/colors'
 
 // Configure Material UI theme
 export const theme = createMuiTheme({
     palette: {
-        primary: indigo,
+        primary: blue,
         secondary: pink,
         type: 'light',
     },
