@@ -1,11 +1,15 @@
 import Button from '@material-ui/core/Button'
 import {
     AppBar,
+    IconButton,
+    Menu,
+    MenuItem,
     Toolbar,
 } from '@material-ui/core'
 import { signOut } from 'next-auth/client'
 import React from 'react'
 import { useRouter } from 'next/router'
+import { AccountCircle } from '@material-ui/icons'
 
 import {
     Routes,
@@ -17,6 +21,8 @@ import {
     TabData,
     TabsView,
 } from '../../Tabs/TabsView'
+import { PROFILE_TITLE } from '../Profile/translations'
+import { SETTINGS_TITLE } from '../Settings/translations'
 
 import {
     FIND_GAME,
@@ -24,7 +30,7 @@ import {
     LEARN_TITLE,
     LOGOUT,
     STORE_TITLE,
-    TITLE,
+    LOBBY_MAIN_TITLE,
 } from './translations'
 import styles from './LobbyPage.module.css'
 
@@ -48,6 +54,22 @@ export function LobbyPage() {
         router.push(reservePath(Routes.LOBBY, { subSection: SUB_SECTIONS.WAITING }))
     const handleLogoutClick = () =>
         signOut()
+    const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null)
+    const isOpen = !!anchorEl
+    const handleMenu = (event: React.MouseEvent<HTMLElement>) => {
+        setAnchorEl(event.currentTarget)
+    }
+    const handleClose = () => {
+        setAnchorEl(null)
+    }
+    const gotoProfile = () => {
+        handleClose()
+        void router.push(reservePath(Routes.LOBBY, { subSection: SUB_SECTIONS.PROFILE }))
+    }
+    const gotoSettings = () => {
+        handleClose()
+        void router.push(reservePath(Routes.SETTINGS))
+    }
 
     return (
         <Layout isCentered={true}>
@@ -63,16 +85,39 @@ export function LobbyPage() {
             <AppBar position="absolute">
                 <Toolbar>
                     <TabsView data={tabs} />
-                    <Button
-                        className={styles.logoutButton}
-                        color={'inherit'}
-                        onClick={handleLogoutClick}
-                    >
-                        {LOGOUT}
-                    </Button>
+                    <div className={styles.logoutButton}>
+                        <IconButton
+                            aria-label="account of current user"
+                            aria-controls="menu-appbar"
+                            aria-haspopup="true"
+                            onClick={handleMenu}
+                            color="inherit"
+                        >
+                            <AccountCircle />
+                        </IconButton>
+                        <Menu
+                            id="menu-appbar"
+                            anchorEl={anchorEl}
+                            anchorOrigin={{
+                                vertical: 'top',
+                                horizontal: 'right',
+                            }}
+                            keepMounted
+                            transformOrigin={{
+                                vertical: 'top',
+                                horizontal: 'right',
+                            }}
+                            open={isOpen}
+                            onClose={handleClose}
+                        >
+                            <MenuItem onClick={gotoProfile}>{PROFILE_TITLE}</MenuItem>
+                            <MenuItem onClick={gotoSettings}>{SETTINGS_TITLE}</MenuItem>
+                            <MenuItem onClick={handleLogoutClick}>{LOGOUT}</MenuItem>
+                        </Menu>
+                    </div>
                 </Toolbar>
             </AppBar>
-            <h1>{TITLE}</h1>
+            <h1 className={'upper'}>{LOBBY_MAIN_TITLE}</h1>
         </Layout>
     )
 

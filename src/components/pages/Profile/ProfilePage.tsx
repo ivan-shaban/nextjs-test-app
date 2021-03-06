@@ -6,7 +6,7 @@ import { Layout } from '../../Layout/Layout'
 import styles from '../Lobby/LobbyPage.module.css'
 import { LOGOUT } from '../Lobby/translations'
 
-import { TITLE } from './translations'
+import { PROFILE_TITLE } from './translations'
 
 export function ProfilePage() {
     const handleLogoutClick = () =>
@@ -21,7 +21,7 @@ export function ProfilePage() {
             >
                 {LOGOUT}
             </Button>
-            <h1>{TITLE}</h1>
+            <h1 className={'upper'}>{PROFILE_TITLE}</h1>
         </Layout>
     )
 }

@@ -12,7 +12,7 @@ import {
 
 import {
     CANCEL_BUTTON,
-    TITLE,
+    WAITING_TITLE,
 } from './translations'
 import styles from './WaitingPage.module.css'
 
@@ -24,7 +24,7 @@ export function WaitingPage() {
     return (
         <Layout isCentered={true}>
             <CircularProgress color="secondary" />
-            <h5>{TITLE}</h5>
+            <h5>{WAITING_TITLE}</h5>
             <Button
                 className={styles.cancelButton}
                 color="secondary"

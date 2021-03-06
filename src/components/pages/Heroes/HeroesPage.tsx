@@ -26,7 +26,7 @@ import {
 } from '../Lobby/translations'
 
 import styles from './HeroesPage.module.css'
-import { TITLE } from './translations'
+import { HEROES_TITLE } from './translations'
 
 export const tabs: TabData[] = [{
     id: 'main',
@@ -72,7 +72,7 @@ export function HeroesPage() {
                     </Button>
                 </Toolbar>
             </AppBar>
-            <h1>{TITLE}</h1>
+            <h1 className={'upper'}>{HEROES_TITLE}</h1>
         </Layout>
     )
 

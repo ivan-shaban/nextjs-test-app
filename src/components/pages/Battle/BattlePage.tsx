@@ -6,7 +6,7 @@ import { Layout } from '../../Layout/Layout'
 import styles from '../Lobby/LobbyPage.module.css'
 import { LOGOUT } from '../Lobby/translations'
 
-import { TITLE } from './translations'
+import { BATTLE_TITLE } from './translations'
 
 export function BattlePage() {
     const handleLogoutClick = () =>
@@ -21,7 +21,7 @@ export function BattlePage() {
             >
                 {LOGOUT}
             </Button>
-            <h1>{TITLE}</h1>
+            <h1 className={'upper'}>{BATTLE_TITLE}</h1>
         </Layout>
     )
 }

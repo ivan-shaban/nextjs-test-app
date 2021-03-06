@@ -26,7 +26,7 @@ import {
 } from '../Lobby/translations'
 
 import styles from './StorePage.module.css'
-import { TITLE } from './translations'
+import { STORE_TITLE } from './translations'
 
 export const tabs: TabData[] = [{
     id: 'main',
@@ -72,7 +72,7 @@ export function StorePage() {
                     </Button>
                 </Toolbar>
             </AppBar>
-            <h1>{TITLE}</h1>
+            <h1 className={'upper'}>{STORE_TITLE}</h1>
         </Layout>
     )
 

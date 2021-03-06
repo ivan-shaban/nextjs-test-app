@@ -1,9 +1,9 @@
 import { FormattedMessage } from 'react-intl'
 import React from 'react'
 
-export const TITLE = (
+export const PROFILE_TITLE = (
     <FormattedMessage
         id="profile.title"
-        defaultMessage="ПРОФИЛЬ"
+        defaultMessage="Профиль"
     />
 )
