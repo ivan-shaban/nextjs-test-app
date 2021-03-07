@@ -8,13 +8,13 @@ import { BACK_BUTTON } from '../Settings/translations'
 
 import { PROFILE_TITLE } from './translations'
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
     backButton: {
         position: 'absolute',
-        top: 20,
-        left: 20,
+        top: theme.offsets.buttonBorderOffset,
+        left: theme.offsets.buttonBorderOffset,
     },
-})
+}))
 
 export function ProfilePage() {
     const classes = useStyles()

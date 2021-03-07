@@ -29,8 +29,8 @@ const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         findGameButton: {
             position: 'fixed',
-            bottom: 20,
-            left: 20,
+            bottom: theme.offsets.buttonBorderOffset,
+            left: theme.offsets.buttonBorderOffset,
         },
         grid: {
             width: '70%',

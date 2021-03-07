@@ -14,13 +14,13 @@ import { LobbyHeader } from '../../LobbyHeader/LobbyHeader'
 
 import { LEARN_TITLE } from './translations'
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
     findGameButton: {
         position: 'fixed',
-        bottom: 20,
-        left: 20,
+        bottom: theme.offsets.buttonBorderOffset,
+        left: theme.offsets.buttonBorderOffset,
     },
-})
+}))
 
 export function LearnPage() {
     const classes = useStyles()

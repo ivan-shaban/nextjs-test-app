@@ -32,12 +32,12 @@ import { LOBBY_MAIN_TITLE } from '../pages/Lobby/translations'
 
 import { LOGOUT } from './translations'
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
     logoutButton: {
         position: 'absolute',
-        right: 20,
+        right: theme.offsets.buttonBorderOffset,
     },
-})
+}))
 
 export const tabs: TabData[] = [{
     id: SUB_SECTIONS.MAIN,

@@ -18,13 +18,13 @@ import {
     WAITING_TITLE,
 } from './translations'
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
     cancelButton: {
         position: 'absolute',
-        bottom: 20,
-        left: 20,
+        bottom: theme.offsets.buttonBorderOffset,
+        left: theme.offsets.buttonBorderOffset,
     },
-})
+}))
 
 export function WaitingPage() {
     const classes = useStyles()
