@@ -75,9 +75,9 @@ export const HeroesPage: FC<Props> = ({ heroes }) => {
             >
                 {FIND_GAME}
             </Button>
-            <div  className={classes.grid}>
+            <div className={classes.grid}>
                 <Grid container spacing={1}>
-                    <Grid className={classes.section} xs={12}>{ATTRIBUTE[Attribute.STRENGTH]}</Grid>
+                    <Grid className={classes.section} item xs={12}>{ATTRIBUTE[Attribute.STRENGTH]}</Grid>
                     {strengthHeroes.map(({
                         id, name,
                     }) => (
@@ -85,7 +85,7 @@ export const HeroesPage: FC<Props> = ({ heroes }) => {
                             <Paper className={classes.paper}>{name}</Paper>
                         </Grid>
                     ))}
-                    <Grid className={classes.section} xs={12}>{ATTRIBUTE[Attribute.AGILITY]}</Grid>
+                    <Grid className={classes.section} item xs={12}>{ATTRIBUTE[Attribute.AGILITY]}</Grid>
                     {agilityHeroes.map(({
                         id, name,
                     }) => (
@@ -93,7 +93,7 @@ export const HeroesPage: FC<Props> = ({ heroes }) => {
                             <Paper className={classes.paper}>{name}</Paper>
                         </Grid>
                     ))}
-                    <Grid className={classes.section} xs={12}>{ATTRIBUTE[Attribute.INTELLECT]}</Grid>
+                    <Grid className={classes.section} item xs={12}>{ATTRIBUTE[Attribute.INTELLECT]}</Grid>
                     {intellectHeroes.map(({
                         id, name,
                     }) => (
