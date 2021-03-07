@@ -1,5 +1,9 @@
 import NextAuth, { InitOptions } from 'next-auth'
 import Providers from 'next-auth/providers';
+import {
+    NextApiRequest,
+    NextApiResponse,
+} from 'next'
 
 const options: InitOptions = {
     // https://next-auth.js.org/configuration/providers
@@ -105,4 +109,4 @@ const options: InitOptions = {
     debug: false,
 }
 
-export default (req, res) => NextAuth(req, res, options);
+export default (req: NextApiRequest, res: NextApiResponse) => NextAuth(req, res, options);

@@ -15,6 +15,7 @@ import React, { SyntheticEvent } from 'react'
 import { WithRouterProps } from 'next/dist/client/with-router'
 import { csrfToken } from 'next-auth/client'
 import axios from 'axios'
+import { NextPageContext } from 'next'
 
 import { reservePath } from '../../../helpers/routers'
 import {
@@ -59,7 +60,7 @@ const styles = createStyles({
 })
 
 export interface Props {
-    readonly csrfToken: string
+    readonly csrfToken: string | null
 }
 
 export interface State {
@@ -76,7 +77,7 @@ const snackbarPosition: SnackbarOrigin = {
 }
 
 export class LoginView extends React.PureComponent<Props & WithRouterProps & WithStyles<typeof styles>, State> {
-    static getInitialProps = async (context): Promise<Props> => {
+    static getInitialProps = async (context: NextPageContext): Promise<Props> => {
         return { csrfToken: await csrfToken(context) }
     }
 

@@ -1,4 +1,5 @@
 import { getSession } from 'next-auth/client'
+import { NextPageContext } from 'next'
 
 import { reservePath } from '../helpers/routers'
 import {
@@ -9,7 +10,7 @@ import { IndexPage } from '../components/pages/Index/IndexPage'
 
 export default IndexPage
 
-export async function getServerSideProps(context) {
+export async function getServerSideProps(context: NextPageContext) {
     const session = await getSession(context)
 
     return {

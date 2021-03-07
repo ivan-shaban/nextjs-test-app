@@ -38,9 +38,10 @@ export default function Post({ postData }: {
 // eslint-disable-next-line @typescript-eslint/require-await
 export const getStaticPaths: GetStaticPaths = async (props) => {
     const paths = getAllPostIds().reduce((result, value) => {
-        props.locales.forEach((locale) => {
+        props.locales!.forEach((locale) => {
             result.push({
                 ...value,
+                // @ts-ignore
                 locale,
             })
         })
@@ -54,8 +55,9 @@ export const getStaticPaths: GetStaticPaths = async (props) => {
     }
 }
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-    const postData = await getPostData(params.id as string)
+// eslint-disable-next-line @typescript-eslint/ban-types
+export const getStaticProps: GetStaticProps<{}, { readonly id: string }> = async ({ params }) => {
+    const postData = await getPostData(params!.id)
 
     return { props: { postData } }
 }

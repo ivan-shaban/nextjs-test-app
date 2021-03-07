@@ -26,7 +26,7 @@ export default function MyApp({
         const jssStyles = document.querySelector('#jss-server-side')
 
         if (jssStyles) {
-            jssStyles.parentElement.removeChild(jssStyles)
+            jssStyles.parentElement!.removeChild(jssStyles)
         }
     }, [])
 
@@ -56,7 +56,7 @@ export default function MyApp({
 
 const getInitialProps: typeof App.getInitialProps = async (appContext) => {
     const [{ default: messages }, props] = await Promise.all([
-        getLocaleMessages(appContext.router.locale),
+        getLocaleMessages(appContext.router.locale!),
         App.getInitialProps(appContext),
     ])
 
