@@ -1,21 +1,29 @@
 import Button from '@material-ui/core/Button'
 import { signOut } from 'next-auth/client'
 import React from 'react'
+import { makeStyles } from '@material-ui/core'
 
 import { Layout } from '../../Layout/Layout'
-import styles from '../Lobby/LobbyPage.module.css'
 import { LOGOUT } from '../../LobbyHeader/translations'
 
 import { BATTLE_TITLE } from './translations'
 
+const useStyles = makeStyles((theme) => ({
+    logoutButton: {
+        position: 'absolute',
+        right: theme.offsets.buttonBorderOffset,
+    },
+}))
+
 export function BattlePage() {
+    const classes = useStyles()
     const handleLogoutClick = () =>
         signOut()
 
     return (
         <Layout isCentered={true}>
             <Button
-                className={styles.logoutButton}
+                className={classes.logoutButton}
                 color="secondary"
                 onClick={handleLogoutClick}
             >
