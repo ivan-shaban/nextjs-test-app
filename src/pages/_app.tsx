@@ -26,7 +26,6 @@ export default function MyApp({
         const jssStyles = document.querySelector('#jss-server-side')
 
         if (jssStyles) {
-            console.log('>> remove ssr css', jssStyles.innerHTML);
             jssStyles.parentElement.removeChild(jssStyles)
         }
     }, [])

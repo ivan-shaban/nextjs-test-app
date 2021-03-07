@@ -1,6 +1,9 @@
 import {
+    createStyles,
     TextField,
     Typography,
+    WithStyles,
+    withStyles,
 } from '@material-ui/core'
 import Snackbar, { SnackbarOrigin } from '@material-ui/core/Snackbar'
 import SnackbarContent from '@material-ui/core/SnackbarContent'
@@ -25,7 +28,35 @@ import {
     WELCOME_MESSAGE,
     YOUR_NAME,
 } from './translations'
-import styles from './LoginPage.module.css'
+
+const styles = createStyles({
+    form: {
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'column',
+    },
+    texts: {
+        display: 'flex',
+        alignItems: 'baseline',
+    },
+    loginButton: { marginTop: 20 },
+    title: { marginRight: 5 },
+    input: {
+        width: 150,
+        marginTop: -23,
+    },
+    errorIcon: {
+        fontSize: 20,
+        opacity: 0.9,
+        marginRight: 10,
+    },
+    closeIcon: { fontSize: 20 },
+    snackbarContent: { backgroundColor: '#d32f2f' },
+    snackbarMessage: {
+        display: 'flex',
+        alignItems: 'center',
+    },
+})
 
 export interface Props {
     readonly csrfToken: string
@@ -44,7 +75,7 @@ const snackbarPosition: SnackbarOrigin = {
     horizontal: 'right',
 }
 
-export class LoginPage extends React.PureComponent<Props & WithRouterProps, State> {
+export class LoginView extends React.PureComponent<Props & WithRouterProps & WithStyles<typeof styles>, State> {
     static getInitialProps = async (context): Promise<Props> => {
         return { csrfToken: await csrfToken(context) }
     }
@@ -103,9 +134,11 @@ export class LoginPage extends React.PureComponent<Props & WithRouterProps, Stat
     }
 
     render() {
+        const { classes } = this.props
+
         const input = (
             <TextField
-                className={styles.input}
+                className={classes.input}
                 id="standard-search"
                 label={YOUR_NAME}
                 type="search"
@@ -116,10 +149,10 @@ export class LoginPage extends React.PureComponent<Props & WithRouterProps, Stat
             />
         )
         const snackMessage = (
-            <span className={styles.snackbarMessage}
+            <span className={classes.snackbarMessage}
                 id="client-snackbar"
             >
-                <ErrorIcon className={styles.errorIcon} />
+                <ErrorIcon className={classes.errorIcon} />
                 {this.state.reason}
             </span>
         )
@@ -129,16 +162,16 @@ export class LoginPage extends React.PureComponent<Props & WithRouterProps, Stat
                 color="inherit"
                 onClick={this.handleSnackbarClose}
             >
-                <CloseIcon className={styles.closeIcon} />
+                <CloseIcon className={classes.closeIcon} />
             </IconButton>,
         ]
 
         return (
             <Layout isCentered={true}>
-                <div className={styles.form}>
-                    <div className={styles.texts}>
+                <div className={classes.form}>
+                    <div className={classes.texts}>
                         <Typography
-                            className={styles.title}
+                            className={classes.title}
                             variant="body2"
                             component="div"
                         >
@@ -146,7 +179,7 @@ export class LoginPage extends React.PureComponent<Props & WithRouterProps, Stat
                         </Typography>
                     </div>
                     <Button
-                        className={styles.loginButton}
+                        className={classes.loginButton}
                         color="secondary"
                         disabled={this.state.requestInProgress}
                         onClick={this.handleLoginClick}
@@ -162,7 +195,7 @@ export class LoginPage extends React.PureComponent<Props & WithRouterProps, Stat
                     autoHideDuration={6000}
                 >
                     <SnackbarContent
-                        className={styles.snackbarContent}
+                        className={classes.snackbarContent}
                         aria-describedby="client-snackbar"
                         message={snackMessage}
                         action={snackAction}
@@ -172,3 +205,5 @@ export class LoginPage extends React.PureComponent<Props & WithRouterProps, Stat
         )
     }
 }
+
+export const LoginPage = withStyles(styles)(LoginView)

@@ -1,16 +1,25 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 import Button from '@material-ui/core/Button'
+import { makeStyles } from '@material-ui/core'
 
 import { Layout } from '../../Layout/Layout'
 
-import styles from './SettingsPage.module.css'
 import {
     BACK_BUTTON,
     SETTINGS_TITLE,
 } from './translations'
 
+const useStyles = makeStyles({
+    backButton: {
+        position: 'absolute',
+        top: 20,
+        left: 20,
+    },
+})
+
 export function SettingsPage() {
+    const classes = useStyles()
     const router = useRouter()
     const handleBackClick = () =>
         router.back()
@@ -18,7 +27,7 @@ export function SettingsPage() {
     return (
         <Layout isCentered={true}>
             <Button
-                className={styles.backButton}
+                className={classes.backButton}
                 color="secondary"
                 size="large"
                 onClick={handleBackClick}

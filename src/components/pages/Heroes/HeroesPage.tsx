@@ -1,6 +1,16 @@
 import Button from '@material-ui/core/Button'
-import React from 'react'
+import React, {
+    FC,
+    useMemo,
+} from 'react'
 import { useRouter } from 'next/router'
+import {
+    createStyles,
+    Grid,
+    makeStyles,
+    Paper,
+    Theme,
+} from '@material-ui/core'
 
 import {
     Routes,
@@ -9,21 +19,55 @@ import {
 import { reservePath } from '../../../helpers/routers'
 import { Layout } from '../../Layout/Layout'
 import { FIND_GAME } from '../Lobby/translations'
+import { Hero } from '../../../data/types/heroes'
+import { Attribute } from '../../../constants/heroes'
 import { LobbyHeader } from '../../LobbyHeader/LobbyHeader'
 
-import styles from './HeroesPage.module.css'
-import { HEROES_TITLE } from './translations'
+import { ATTRIBUTE } from './translations'
 
-export function HeroesPage() {
+const useStyles = makeStyles((theme: Theme) =>
+    createStyles({
+        findGameButton: {
+            position: 'fixed',
+            bottom: 20,
+            left: 20,
+        },
+        grid: {
+            width: '70%',
+            margin: '0 auto',
+            padding: '150px 0',
+        },
+        section: {
+            paddingTop: theme.spacing(2),
+            paddingLeft: 6,
+        },
+        paper: {
+            padding: theme.spacing(2),
+            textAlign: 'center',
+            color: theme.palette.text.secondary,
+            height: 120,
+        },
+    })
+)
+
+export interface Props {
+    readonly heroes: Hero[]
+}
+
+export const HeroesPage: FC<Props> = ({ heroes }) => {
+    const classes = useStyles()
+    const strengthHeroes = useMemo(() => heroes.filter(({ primaryAttr }) => primaryAttr === Attribute.STRENGTH), [])
+    const agilityHeroes = useMemo(() => heroes.filter(({ primaryAttr }) => primaryAttr === Attribute.AGILITY), [])
+    const intellectHeroes = useMemo(() => heroes.filter(({ primaryAttr }) => primaryAttr === Attribute.INTELLECT), [])
     const router = useRouter()
     const handleFindGameClick = () =>
         router.push(reservePath(Routes.LOBBY, { subSection: SUB_SECTIONS.WAITING }))
 
     return (
-        <Layout isCentered={true}>
+        <Layout>
             <LobbyHeader currentPage={SUB_SECTIONS.HEROES} />
             <Button
-                className={styles.findGameButton}
+                className={classes.findGameButton}
                 color="secondary"
                 variant="contained"
                 size="large"
@@ -31,8 +75,34 @@ export function HeroesPage() {
             >
                 {FIND_GAME}
             </Button>
-            <h1 className={'upper'}>{HEROES_TITLE}</h1>
+            <div  className={classes.grid}>
+                <Grid container spacing={1}>
+                    <Grid className={classes.section} xs={12}>{ATTRIBUTE[Attribute.STRENGTH]}</Grid>
+                    {strengthHeroes.map(({
+                        id, name,
+                    }) => (
+                        <Grid item xs={1} key={`hero-${id}`}>
+                            <Paper className={classes.paper}>{name}</Paper>
+                        </Grid>
+                    ))}
+                    <Grid className={classes.section} xs={12}>{ATTRIBUTE[Attribute.AGILITY]}</Grid>
+                    {agilityHeroes.map(({
+                        id, name,
+                    }) => (
+                        <Grid item xs={1} key={`hero-${id}`}>
+                            <Paper className={classes.paper}>{name}</Paper>
+                        </Grid>
+                    ))}
+                    <Grid className={classes.section} xs={12}>{ATTRIBUTE[Attribute.INTELLECT]}</Grid>
+                    {intellectHeroes.map(({
+                        id, name,
+                    }) => (
+                        <Grid item xs={1} key={`hero-${id}`}>
+                            <Paper className={classes.paper}>{name}</Paper>
+                        </Grid>
+                    ))}
+                </Grid>
+            </div>
         </Layout>
     )
-
 }

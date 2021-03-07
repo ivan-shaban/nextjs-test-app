@@ -1,6 +1,7 @@
 import {
     AppBar,
     IconButton,
+    makeStyles,
     Menu,
     MenuItem,
     Toolbar,
@@ -29,8 +30,14 @@ import { STORE_TITLE } from '../pages/Store/translations'
 import { LEARN_TITLE } from '../pages/Learn/translations'
 import { LOBBY_MAIN_TITLE } from '../pages/Lobby/translations'
 
-import styles from './LobbyHeader.module.css'
 import { LOGOUT } from './translations'
+
+const useStyles = makeStyles({
+    logoutButton: {
+        position: 'absolute',
+        right: 20,
+    },
+})
 
 export const tabs: TabData[] = [{
     id: SUB_SECTIONS.MAIN,
@@ -55,6 +62,7 @@ export interface Props {
 }
 
 export const LobbyHeader: FC<Props> = ({ currentPage }) => {
+    const classes = useStyles()
     const router = useRouter()
     const tabsData = useMemo(() => tabs.map((item) => item.id !== currentPage ? item : {
         ...item,
@@ -80,10 +88,10 @@ export const LobbyHeader: FC<Props> = ({ currentPage }) => {
     }
 
     return (
-        <AppBar position="absolute">
+        <AppBar position="fixed">
             <Toolbar>
                 <TabsView data={tabsData} />
-                <div className={styles.logoutButton}>
+                <div className={classes.logoutButton}>
                     <IconButton
                         aria-label="account of current user"
                         aria-controls="menu-appbar"

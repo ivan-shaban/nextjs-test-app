@@ -1,6 +1,7 @@
 import Button from '@material-ui/core/Button'
 import React from 'react'
 import { useRouter } from 'next/router'
+import { makeStyles } from '@material-ui/core'
 
 import {
     Routes,
@@ -11,10 +12,18 @@ import { Layout } from '../../Layout/Layout'
 import { FIND_GAME } from '../Lobby/translations'
 import { LobbyHeader } from '../../LobbyHeader/LobbyHeader'
 
-import styles from './LearnPage.module.css'
 import { LEARN_TITLE } from './translations'
 
+const useStyles = makeStyles({
+    findGameButton: {
+        position: 'fixed',
+        bottom: 20,
+        left: 20,
+    },
+})
+
 export function LearnPage() {
+    const classes = useStyles()
     const router = useRouter()
     const handleFindGameClick = () =>
         router.push(reservePath(Routes.LOBBY, { subSection: SUB_SECTIONS.WAITING }))
@@ -23,7 +32,7 @@ export function LearnPage() {
         <Layout isCentered={true}>
             <LobbyHeader currentPage={SUB_SECTIONS.LEARN} />
             <Button
-                className={styles.findGameButton}
+                className={classes.findGameButton}
                 color="secondary"
                 variant="contained"
                 size="large"

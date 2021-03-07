@@ -1,4 +1,7 @@
-import { CircularProgress } from '@material-ui/core'
+import {
+    CircularProgress,
+    makeStyles,
+} from '@material-ui/core'
 import Button from '@material-ui/core/Button'
 import React from 'react'
 import { useRouter } from 'next/router'
@@ -14,9 +17,17 @@ import {
     CANCEL_BUTTON,
     WAITING_TITLE,
 } from './translations'
-import styles from './WaitingPage.module.css'
+
+const useStyles = makeStyles({
+    cancelButton: {
+        position: 'absolute',
+        bottom: 20,
+        left: 20,
+    },
+})
 
 export function WaitingPage() {
+    const classes = useStyles()
     const router = useRouter()
     const handleCancelClick = () =>
         router.push(reservePath(Routes.LOBBY, { subSection: SUB_SECTIONS.MAIN }))
@@ -26,7 +37,7 @@ export function WaitingPage() {
             <CircularProgress color="secondary" />
             <h5>{WAITING_TITLE}</h5>
             <Button
-                className={styles.cancelButton}
+                className={classes.cancelButton}
                 color="secondary"
                 size="large"
                 onClick={handleCancelClick}
