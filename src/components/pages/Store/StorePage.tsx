@@ -29,7 +29,7 @@ export function StorePage() {
         router.push(reservePath(Routes.LOBBY, { subSection: SUB_SECTIONS.WAITING }))
 
     return (
-        <Layout isCentered={true}>
+        <Layout isCentered={true} isProtected={true}>
             <LobbyHeader currentPage={SUB_SECTIONS.STORE} />
             <Button
                 className={classes.findGameButton}

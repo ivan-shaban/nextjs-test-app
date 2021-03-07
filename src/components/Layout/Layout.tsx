@@ -1,8 +1,17 @@
-import React, { PropsWithChildren } from 'react'
+import React, {
+    PropsWithChildren,
+    useEffect,
+} from 'react'
 import { makeStyles } from '@material-ui/core'
+import { useSession } from 'next-auth/client'
+import { useRouter } from 'next/router'
+
+import { reservePath } from '../../helpers/routers'
+import { Routes } from '../../constants/routes'
 
 export interface Props {
     readonly isCentered?: boolean
+    readonly isProtected?: boolean
 }
 
 const useStyles = makeStyles({
@@ -21,7 +30,19 @@ const useStyles = makeStyles({
 })
 
 export const Layout: React.FC<PropsWithChildren<Props>> = (props) => {
+    useEffect(() => {
+        if (props.isProtected && !session) {
+            void router.push(reservePath(Routes.LOGIN))
+        }
+    }, [])
+
+    const router = useRouter()
+    const [session] = useSession()
     const classes = useStyles(props)
+
+    if (props.isProtected && !session) {
+        return null
+    }
 
     return (
         <div className={classes.base}>{props.children}</div>

@@ -21,7 +21,7 @@ export function BattlePage() {
         signOut()
 
     return (
-        <Layout isCentered={true}>
+        <Layout isCentered={true} isProtected={true}>
             <Button
                 className={classes.logoutButton}
                 color="secondary"

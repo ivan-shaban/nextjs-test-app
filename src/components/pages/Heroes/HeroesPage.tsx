@@ -64,7 +64,7 @@ export const HeroesPage: FC<Props> = ({ heroes }) => {
         router.push(reservePath(Routes.LOBBY, { subSection: SUB_SECTIONS.WAITING }))
 
     return (
-        <Layout>
+        <Layout isProtected={true}>
             <LobbyHeader currentPage={SUB_SECTIONS.HEROES} />
             <Button
                 className={classes.findGameButton}

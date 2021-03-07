@@ -29,7 +29,7 @@ export function LearnPage() {
         router.push(reservePath(Routes.LOBBY, { subSection: SUB_SECTIONS.WAITING }))
 
     return (
-        <Layout isCentered={true}>
+        <Layout isCentered={true} isProtected={true}>
             <LobbyHeader currentPage={SUB_SECTIONS.LEARN} />
             <Button
                 className={classes.findGameButton}

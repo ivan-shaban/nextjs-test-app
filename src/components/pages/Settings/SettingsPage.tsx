@@ -25,7 +25,7 @@ export function SettingsPage() {
         router.back()
 
     return (
-        <Layout isCentered={true}>
+        <Layout isCentered={true} isProtected={true}>
             <Button
                 className={classes.backButton}
                 color="secondary"

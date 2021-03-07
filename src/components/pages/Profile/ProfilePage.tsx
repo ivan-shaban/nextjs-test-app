@@ -23,7 +23,7 @@ export function ProfilePage() {
         router.back()
 
     return (
-        <Layout isCentered={true}>
+        <Layout isCentered={true} isProtected={true}>
             <Button
                 className={classes.backButton}
                 color="secondary"
