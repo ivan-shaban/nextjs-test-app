@@ -22,6 +22,7 @@ const useStyles = makeStyles({
         bottom: 0,
         left: 0,
         display: 'flex',
+        minWidth: 1024,
         flexDirection: 'column',
         alignItems: isCentered ? 'center' : 'initial',
         justifyContent: isCentered ? 'center' : 'initial',
@@ -30,19 +31,15 @@ const useStyles = makeStyles({
 })
 
 export const Layout: React.FC<PropsWithChildren<Props>> = (props) => {
-    useEffect(() => {
-        if (props.isProtected && !session) {
-            void router.push(reservePath(Routes.LOGIN))
-        }
-    }, [])
-
     const router = useRouter()
-    const [session] = useSession()
+    const [session, loading] = useSession()
     const classes = useStyles(props)
 
-    if (props.isProtected && !session) {
-        return null
-    }
+    useEffect(() => {
+        if (props.isProtected && !loading && !session) {
+            void router.push(reservePath(Routes.LOGIN))
+        }
+    }, [loading])
 
     return (
         <div className={classes.base}>{props.children}</div>

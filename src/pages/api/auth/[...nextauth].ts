@@ -27,10 +27,8 @@ const options: InitOptions = {
                     return {
                         id: 1,
                         name: username,
-                        image: 'image',
                         email: `${username}@example.com`,
                     };
-                    // return user;
                 } else {
                     return null;
                 }
