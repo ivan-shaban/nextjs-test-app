@@ -27,6 +27,7 @@ const useStyles = makeStyles({
         alignItems: isCentered ? 'center' : 'initial',
         justifyContent: isCentered ? 'center' : 'initial',
         backgroundColor: '#f5f5f5',
+        userSelect: 'none',
     }),
 })
 
