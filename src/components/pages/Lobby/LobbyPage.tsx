@@ -15,6 +15,7 @@ import {
     FIND_GAME,
     LOBBY_MAIN_TITLE,
 } from './translations'
+import 'dota2-minimap-hero-sprites/assets/stylesheets/dota2minimapheroes.css'
 
 const useStyles = makeStyles((theme) => ({
     findGameButton: {
@@ -43,6 +44,7 @@ export function LobbyPage() {
                 {FIND_GAME}
             </Button>
             <h1 className={'upper'}>{LOBBY_MAIN_TITLE}</h1>
+            <i className="d2mh axe"></i>
         </Layout>
     )
 }

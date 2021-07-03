@@ -1461,6 +1461,11 @@ domain-browser@^1.1.1:
   resolved "https://registry.yarnpkg.com/domain-browser/-/domain-browser-1.2.0.tgz#3d31f50191a6749dd1375a7f522e823d42e54eda"
   integrity sha512-jnjyiM6eRyZl2H+W8Q/zLMA481hzi0eszAaBUzIVnmYVDBbnLxVNnfu1HgEBvCbL+71FrxMl3E6lpKH7Ge3OXA==
 
+dota2-minimap-hero-sprites@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/dota2-minimap-hero-sprites/-/dota2-minimap-hero-sprites-2.4.0.tgz#b5bd61d35ce079da93e2433afa455aeb05f1fad1"
+  integrity sha512-S7pSefGB91UcHC/RI8tG4l+OamJVNw4pG92QUdzSlDmy+zO5CwHrU0QdUAHn0ZyXgW9VG03DszRXBdA+30y10w==
+
 dotenv@^8.2.0:
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
