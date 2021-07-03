@@ -45,7 +45,9 @@ const useStyles = makeStyles((theme: Theme) =>
             padding: theme.spacing(2),
             textAlign: 'center',
             color: theme.palette.text.secondary,
-            height: 120,
+            height: 144,
+            backgroundPosition: 'center',
+            backgroundImage: 'url("/images/hero-icons/Crystal_Maiden_icon.png")',
         },
     })
 )
@@ -56,9 +58,9 @@ export interface Props {
 
 export const HeroesPage: FC<Props> = ({ heroes }) => {
     const classes = useStyles()
-    const strengthHeroes = useMemo(() => heroes.filter(({ primaryAttr }) => primaryAttr === Attribute.STRENGTH), [])
-    const agilityHeroes = useMemo(() => heroes.filter(({ primaryAttr }) => primaryAttr === Attribute.AGILITY), [])
-    const intellectHeroes = useMemo(() => heroes.filter(({ primaryAttr }) => primaryAttr === Attribute.INTELLECT), [])
+    const strengthHeroes = useMemo(() => heroes.filter(({ primary_attr }) => primary_attr === Attribute.STRENGTH), [])
+    const agilityHeroes = useMemo(() => heroes.filter(({ primary_attr }) => primary_attr === Attribute.AGILITY), [])
+    const intellectHeroes = useMemo(() => heroes.filter(({ primary_attr }) => primary_attr === Attribute.INTELLECT), [])
     const router = useRouter()
     const handleFindGameClick = () =>
         router.push(reservePath(Routes.LOBBY, { subSection: SUB_SECTIONS.WAITING }))
@@ -79,26 +81,32 @@ export const HeroesPage: FC<Props> = ({ heroes }) => {
                 <Grid container spacing={1}>
                     <Grid className={classes.section} item xs={12}>{ATTRIBUTE[Attribute.STRENGTH]}</Grid>
                     {strengthHeroes.map(({
-                        id, name,
+                        id, localized_name, name,
                     }) => (
                         <Grid item xs={1} key={`hero-${id}`}>
-                            <Paper className={classes.paper}>{name}</Paper>
+                            <Paper className={classes.paper}>
+                                {localized_name}
+                            </Paper>
                         </Grid>
                     ))}
                     <Grid className={classes.section} item xs={12}>{ATTRIBUTE[Attribute.AGILITY]}</Grid>
                     {agilityHeroes.map(({
-                        id, name,
+                        id, localized_name, name,
                     }) => (
                         <Grid item xs={1} key={`hero-${id}`}>
-                            <Paper className={classes.paper}>{name}</Paper>
+                            <Paper className={classes.paper}>
+                                {localized_name}
+                            </Paper>
                         </Grid>
                     ))}
                     <Grid className={classes.section} item xs={12}>{ATTRIBUTE[Attribute.INTELLECT]}</Grid>
                     {intellectHeroes.map(({
-                        id, name,
+                        id, localized_name, name,
                     }) => (
                         <Grid item xs={1} key={`hero-${id}`}>
-                            <Paper className={classes.paper}>{name}</Paper>
+                            <Paper className={classes.paper}>
+                                {localized_name}
+                            </Paper>
                         </Grid>
                     ))}
                 </Grid>

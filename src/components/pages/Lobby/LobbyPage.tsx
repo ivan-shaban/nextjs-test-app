@@ -15,6 +15,7 @@ import {
     FIND_GAME,
     LOBBY_MAIN_TITLE,
 } from './translations'
+// TODO: just an import example
 import 'dota2-minimap-hero-sprites/assets/stylesheets/dota2minimapheroes.css'
 
 const useStyles = makeStyles((theme) => ({

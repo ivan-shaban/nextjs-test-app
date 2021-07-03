@@ -1,68 +1,12 @@
-import { delay } from '../helpers/timer'
-import { Attribute } from '../constants/heroes'
+import axios from 'axios'
+
 import { Hero } from '../data/types/heroes'
 
-const allHeroes: Hero[] = [
-    { primaryAttr: Attribute.STRENGTH },
-    { primaryAttr: Attribute.STRENGTH },
-    { primaryAttr: Attribute.STRENGTH },
-    { primaryAttr: Attribute.STRENGTH },
-    { primaryAttr: Attribute.STRENGTH },
-    { primaryAttr: Attribute.STRENGTH },
-    { primaryAttr: Attribute.STRENGTH },
-    { primaryAttr: Attribute.STRENGTH },
-    { primaryAttr: Attribute.STRENGTH },
-    { primaryAttr: Attribute.STRENGTH },
-    { primaryAttr: Attribute.STRENGTH },
-    { primaryAttr: Attribute.STRENGTH },
-    { primaryAttr: Attribute.STRENGTH },
-    { primaryAttr: Attribute.STRENGTH },
-    { primaryAttr: Attribute.STRENGTH },
-    { primaryAttr: Attribute.STRENGTH },
-    { primaryAttr: Attribute.STRENGTH },
-    { primaryAttr: Attribute.STRENGTH },
-    { primaryAttr: Attribute.STRENGTH },
-    { primaryAttr: Attribute.STRENGTH },
-    { primaryAttr: Attribute.AGILITY },
-    { primaryAttr: Attribute.AGILITY },
-    { primaryAttr: Attribute.AGILITY },
-    { primaryAttr: Attribute.AGILITY },
-    { primaryAttr: Attribute.AGILITY },
-    { primaryAttr: Attribute.AGILITY },
-    { primaryAttr: Attribute.AGILITY },
-    { primaryAttr: Attribute.AGILITY },
-    { primaryAttr: Attribute.AGILITY },
-    { primaryAttr: Attribute.AGILITY },
-    { primaryAttr: Attribute.INTELLECT },
-    { primaryAttr: Attribute.INTELLECT },
-    { primaryAttr: Attribute.INTELLECT },
-    { primaryAttr: Attribute.INTELLECT },
-    { primaryAttr: Attribute.INTELLECT },
-    { primaryAttr: Attribute.INTELLECT },
-    { primaryAttr: Attribute.INTELLECT },
-    { primaryAttr: Attribute.INTELLECT },
-    { primaryAttr: Attribute.INTELLECT },
-    { primaryAttr: Attribute.INTELLECT },
-    { primaryAttr: Attribute.INTELLECT },
-    { primaryAttr: Attribute.INTELLECT },
-    { primaryAttr: Attribute.INTELLECT },
-    { primaryAttr: Attribute.INTELLECT },
-    { primaryAttr: Attribute.INTELLECT },
-    { primaryAttr: Attribute.INTELLECT },
-    { primaryAttr: Attribute.INTELLECT },
-    { primaryAttr: Attribute.INTELLECT },
-    { primaryAttr: Attribute.INTELLECT },
-    { primaryAttr: Attribute.INTELLECT },
-    { primaryAttr: Attribute.INTELLECT },
-    { primaryAttr: Attribute.INTELLECT },
-    { primaryAttr: Attribute.INTELLECT },
-].map((hero, index) => ({
-    ...hero,
-    id: index,
-}))
-
 export const getAllHeroesByPrimaryAttr = async () => {
-    await delay(5)
+    const heroes = await axios.get<{
+        [id:string]: Hero
+    }>('https://raw.githubusercontent.com/odota/dotaconstants/master/build/heroes.json')
 
-    return allHeroes
+    return Object.values(heroes.data)
+
 }
