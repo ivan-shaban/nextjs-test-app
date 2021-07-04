@@ -10,7 +10,7 @@
       "Escape",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/antimage_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_antimage/card_icon.png",
     "icon": "/apps/dota2/images/heroes/antimage_icon.png",
     "base_health": 200,
     "base_health_regen": 0.25,
@@ -47,7 +47,7 @@
       "Jungler",
       "Carry"
     ],
-    "img": "/apps/dota2/images/heroes/axe_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_axe/card_icon.png",
     "icon": "/apps/dota2/images/heroes/axe_icon.png",
     "base_health": 200,
     "base_health_regen": 2.75,
@@ -83,7 +83,7 @@
       "Nuker",
       "Durable"
     ],
-    "img": "/apps/dota2/images/heroes/bane_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_bane/card_icon.png",
     "icon": "/apps/dota2/images/heroes/bane_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -120,7 +120,7 @@
       "Nuker",
       "Initiator"
     ],
-    "img": "/apps/dota2/images/heroes/bloodseeker_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_bloodseeker/card_icon.png",
     "icon": "/apps/dota2/images/heroes/bloodseeker_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -156,7 +156,7 @@
       "Nuker",
       "Jungler"
     ],
-    "img": "/apps/dota2/images/heroes/crystal_maiden_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_crystal_maiden/card_icon.png",
     "icon": "/apps/dota2/images/heroes/crystal_maiden_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -191,7 +191,7 @@
       "Disabler",
       "Pusher"
     ],
-    "img": "/apps/dota2/images/heroes/drow_ranger_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_drow_ranger/card_icon.png",
     "icon": "/apps/dota2/images/heroes/drow_ranger_icon.png",
     "base_health": 200,
     "base_health_regen": 0.25,
@@ -227,7 +227,7 @@
       "Disabler",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/earthshaker_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_earthshaker/card_icon.png",
     "icon": "/apps/dota2/images/heroes/earthshaker_icon.png",
     "base_health": 200,
     "base_health_regen": 1,
@@ -262,7 +262,7 @@
       "Pusher",
       "Escape"
     ],
-    "img": "/apps/dota2/images/heroes/juggernaut_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_juggernaut/card_icon.png",
     "icon": "/apps/dota2/images/heroes/juggernaut_icon.png",
     "base_health": 200,
     "base_health_regen": 0.5,
@@ -299,7 +299,7 @@
       "Nuker",
       "Disabler"
     ],
-    "img": "/apps/dota2/images/heroes/mirana_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_mirana/card_icon.png",
     "icon": "/apps/dota2/images/heroes/mirana_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -336,7 +336,7 @@
       "Nuker",
       "Disabler"
     ],
-    "img": "/apps/dota2/images/heroes/morphling_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_morphling/card_icon.png",
     "icon": "/apps/dota2/images/heroes/morphling_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -370,7 +370,7 @@
       "Carry",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/nevermore_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_nevermore/card_icon.png",
     "icon": "/apps/dota2/images/heroes/nevermore_icon.png",
     "base_health": 200,
     "base_health_regen": 0.25,
@@ -406,7 +406,7 @@
       "Pusher",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/phantom_lancer_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_phantom_lancer/card_icon.png",
     "icon": "/apps/dota2/images/heroes/phantom_lancer_icon.png",
     "base_health": 200,
     "base_health_regen": 1.5,
@@ -442,7 +442,7 @@
       "Escape",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/puck_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_puck/card_icon.png",
     "icon": "/apps/dota2/images/heroes/puck_icon.png",
     "base_health": 200,
     "base_health_regen": 0.5,
@@ -478,7 +478,7 @@
       "Durable",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/pudge_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_pudge/card_icon.png",
     "icon": "/apps/dota2/images/heroes/pudge_icon.png",
     "base_health": 200,
     "base_health_regen": 2,
@@ -514,7 +514,7 @@
       "Nuker",
       "Pusher"
     ],
-    "img": "/apps/dota2/images/heroes/razor_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_razor/card_icon.png",
     "icon": "/apps/dota2/images/heroes/razor_icon.png",
     "base_health": 200,
     "base_health_regen": 1,
@@ -552,7 +552,7 @@
       "Escape",
       "Jungler"
     ],
-    "img": "/apps/dota2/images/heroes/sand_king_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_sand_king/card_icon.png",
     "icon": "/apps/dota2/images/heroes/sand_king_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -589,7 +589,7 @@
       "Initiator",
       "Disabler"
     ],
-    "img": "/apps/dota2/images/heroes/storm_spirit_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_storm_spirit/card_icon.png",
     "icon": "/apps/dota2/images/heroes/storm_spirit_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -626,7 +626,7 @@
       "Durable",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/sven_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_sven/card_icon.png",
     "icon": "/apps/dota2/images/heroes/sven_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -664,7 +664,7 @@
       "Durable",
       "Disabler"
     ],
-    "img": "/apps/dota2/images/heroes/tiny_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_tiny/card_icon.png",
     "icon": "/apps/dota2/images/heroes/tiny_icon.png",
     "base_health": 200,
     "base_health_regen": 1.5,
@@ -701,7 +701,7 @@
       "Nuker",
       "Escape"
     ],
-    "img": "/apps/dota2/images/heroes/vengefulspirit_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_vengefulspirit/card_icon.png",
     "icon": "/apps/dota2/images/heroes/vengefulspirit_icon.png",
     "base_health": 200,
     "base_health_regen": 0.25,
@@ -738,7 +738,7 @@
       "Escape",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/windrunner_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_windrunner/card_icon.png",
     "icon": "/apps/dota2/images/heroes/windrunner_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -772,7 +772,7 @@
       "Nuker",
       "Carry"
     ],
-    "img": "/apps/dota2/images/heroes/zuus_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_zuus/card_icon.png",
     "icon": "/apps/dota2/images/heroes/zuus_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -810,7 +810,7 @@
       "Durable",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/kunkka_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_kunkka/card_icon.png",
     "icon": "/apps/dota2/images/heroes/kunkka_icon.png",
     "base_health": 200,
     "base_health_regen": 0.75,
@@ -846,7 +846,7 @@
       "Nuker",
       "Disabler"
     ],
-    "img": "/apps/dota2/images/heroes/lina_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_lina/card_icon.png",
     "icon": "/apps/dota2/images/heroes/lina_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -882,7 +882,7 @@
       "Nuker",
       "Initiator"
     ],
-    "img": "/apps/dota2/images/heroes/lion_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_lion/card_icon.png",
     "icon": "/apps/dota2/images/heroes/lion_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -919,7 +919,7 @@
       "Nuker",
       "Initiator"
     ],
-    "img": "/apps/dota2/images/heroes/shadow_shaman_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_shadow_shaman/card_icon.png",
     "icon": "/apps/dota2/images/heroes/shadow_shaman_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -956,7 +956,7 @@
       "Disabler",
       "Escape"
     ],
-    "img": "/apps/dota2/images/heroes/slardar_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_slardar/card_icon.png",
     "icon": "/apps/dota2/images/heroes/slardar_icon.png",
     "base_health": 200,
     "base_health_regen": 0.5,
@@ -993,7 +993,7 @@
       "Nuker",
       "Carry"
     ],
-    "img": "/apps/dota2/images/heroes/tidehunter_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_tidehunter/card_icon.png",
     "icon": "/apps/dota2/images/heroes/tidehunter_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -1028,7 +1028,7 @@
       "Nuker",
       "Disabler"
     ],
-    "img": "/apps/dota2/images/heroes/witch_doctor_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_witch_doctor/card_icon.png",
     "icon": "/apps/dota2/images/heroes/witch_doctor_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -1062,7 +1062,7 @@
       "Support",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/lich_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_lich/card_icon.png",
     "icon": "/apps/dota2/images/heroes/lich_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -1097,7 +1097,7 @@
       "Escape",
       "Disabler"
     ],
-    "img": "/apps/dota2/images/heroes/riki_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_riki/card_icon.png",
     "icon": "/apps/dota2/images/heroes/riki_icon.png",
     "base_health": 200,
     "base_health_regen": 2.5,
@@ -1133,7 +1133,7 @@
       "Initiator",
       "Pusher"
     ],
-    "img": "/apps/dota2/images/heroes/enigma_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_enigma/card_icon.png",
     "icon": "/apps/dota2/images/heroes/enigma_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -1168,7 +1168,7 @@
       "Nuker",
       "Pusher"
     ],
-    "img": "/apps/dota2/images/heroes/tinker_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_tinker/card_icon.png",
     "icon": "/apps/dota2/images/heroes/tinker_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -1202,7 +1202,7 @@
       "Carry",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/sniper_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_sniper/card_icon.png",
     "icon": "/apps/dota2/images/heroes/sniper_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -1238,7 +1238,7 @@
       "Durable",
       "Disabler"
     ],
-    "img": "/apps/dota2/images/heroes/necrolyte_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_necrolyte/card_icon.png",
     "icon": "/apps/dota2/images/heroes/necrolyte_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -1273,7 +1273,7 @@
       "Initiator",
       "Disabler"
     ],
-    "img": "/apps/dota2/images/heroes/warlock_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_warlock/card_icon.png",
     "icon": "/apps/dota2/images/heroes/warlock_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -1309,7 +1309,7 @@
       "Durable",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/beastmaster_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_beastmaster/card_icon.png",
     "icon": "/apps/dota2/images/heroes/beastmaster_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -1344,7 +1344,7 @@
       "Nuker",
       "Escape"
     ],
-    "img": "/apps/dota2/images/heroes/queenofpain_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_queenofpain/card_icon.png",
     "icon": "/apps/dota2/images/heroes/queenofpain_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -1381,7 +1381,7 @@
       "Pusher",
       "Disabler"
     ],
-    "img": "/apps/dota2/images/heroes/venomancer_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_venomancer/card_icon.png",
     "icon": "/apps/dota2/images/heroes/venomancer_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -1418,7 +1418,7 @@
       "Escape",
       "Durable"
     ],
-    "img": "/apps/dota2/images/heroes/faceless_void_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_faceless_void/card_icon.png",
     "icon": "/apps/dota2/images/heroes/faceless_void_icon.png",
     "base_health": 200,
     "base_health_regen": 0.5,
@@ -1455,7 +1455,7 @@
       "Disabler",
       "Initiator"
     ],
-    "img": "/apps/dota2/images/heroes/skeleton_king_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_skeleton_king/card_icon.png",
     "icon": "/apps/dota2/images/heroes/skeleton_king_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -1491,7 +1491,7 @@
       "Nuker",
       "Disabler"
     ],
-    "img": "/apps/dota2/images/heroes/death_prophet_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_death_prophet/card_icon.png",
     "icon": "/apps/dota2/images/heroes/death_prophet_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -1525,7 +1525,7 @@
       "Carry",
       "Escape"
     ],
-    "img": "/apps/dota2/images/heroes/phantom_assassin_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_phantom_assassin/card_icon.png",
     "icon": "/apps/dota2/images/heroes/phantom_assassin_icon.png",
     "base_health": 200,
     "base_health_regen": 0.25,
@@ -1559,7 +1559,7 @@
       "Nuker",
       "Pusher"
     ],
-    "img": "/apps/dota2/images/heroes/pugna_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_pugna/card_icon.png",
     "icon": "/apps/dota2/images/heroes/pugna_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -1593,7 +1593,7 @@
       "Carry",
       "Escape"
     ],
-    "img": "/apps/dota2/images/heroes/templar_assassin_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_templar_assassin/card_icon.png",
     "icon": "/apps/dota2/images/heroes/templar_assassin_icon.png",
     "base_health": 200,
     "base_health_regen": 0.25,
@@ -1629,7 +1629,7 @@
       "Initiator",
       "Disabler"
     ],
-    "img": "/apps/dota2/images/heroes/viper_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_viper/card_icon.png",
     "icon": "/apps/dota2/images/heroes/viper_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -1664,7 +1664,7 @@
       "Nuker",
       "Pusher"
     ],
-    "img": "/apps/dota2/images/heroes/luna_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_luna/card_icon.png",
     "icon": "/apps/dota2/images/heroes/luna_icon.png",
     "base_health": 200,
     "base_health_regen": 0.5,
@@ -1702,7 +1702,7 @@
       "Initiator",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/dragon_knight_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_dragon_knight/card_icon.png",
     "icon": "/apps/dota2/images/heroes/dragon_knight_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -1737,7 +1737,7 @@
       "Nuker",
       "Disabler"
     ],
-    "img": "/apps/dota2/images/heroes/dazzle_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_dazzle/card_icon.png",
     "icon": "/apps/dota2/images/heroes/dazzle_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -1773,7 +1773,7 @@
       "Durable",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/rattletrap_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_rattletrap/card_icon.png",
     "icon": "/apps/dota2/images/heroes/rattletrap_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -1810,7 +1810,7 @@
       "Pusher",
       "Disabler"
     ],
-    "img": "/apps/dota2/images/heroes/leshrac_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_leshrac/card_icon.png",
     "icon": "/apps/dota2/images/heroes/leshrac_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -1847,7 +1847,7 @@
       "Escape",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/furion_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_furion/card_icon.png",
     "icon": "/apps/dota2/images/heroes/furion_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -1884,7 +1884,7 @@
       "Escape",
       "Disabler"
     ],
-    "img": "/apps/dota2/images/heroes/life_stealer_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_life_stealer/card_icon.png",
     "icon": "/apps/dota2/images/heroes/life_stealer_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -1920,7 +1920,7 @@
       "Escape",
       "Disabler"
     ],
-    "img": "/apps/dota2/images/heroes/dark_seer_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_dark_seer/card_icon.png",
     "icon": "/apps/dota2/images/heroes/dark_seer_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -1955,7 +1955,7 @@
       "Escape",
       "Pusher"
     ],
-    "img": "/apps/dota2/images/heroes/clinkz_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_clinkz/card_icon.png",
     "icon": "/apps/dota2/images/heroes/clinkz_icon.png",
     "base_health": 200,
     "base_health_regen": 0.25,
@@ -1990,7 +1990,7 @@
       "Durable",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/omniknight_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_omniknight/card_icon.png",
     "icon": "/apps/dota2/images/heroes/omniknight_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -2027,7 +2027,7 @@
       "Durable",
       "Disabler"
     ],
-    "img": "/apps/dota2/images/heroes/enchantress_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_enchantress/card_icon.png",
     "icon": "/apps/dota2/images/heroes/enchantress_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -2062,7 +2062,7 @@
       "Durable",
       "Initiator"
     ],
-    "img": "/apps/dota2/images/heroes/huskar_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_huskar/card_icon.png",
     "icon": "/apps/dota2/images/heroes/huskar_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -2099,7 +2099,7 @@
       "Disabler",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/night_stalker_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_night_stalker/card_icon.png",
     "icon": "/apps/dota2/images/heroes/night_stalker_icon.png",
     "base_health": 200,
     "base_health_regen": 2.25,
@@ -2135,7 +2135,7 @@
       "Escape",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/broodmother_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_broodmother/card_icon.png",
     "icon": "/apps/dota2/images/heroes/broodmother_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -2169,7 +2169,7 @@
       "Escape",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/bounty_hunter_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_bounty_hunter/card_icon.png",
     "icon": "/apps/dota2/images/heroes/bounty_hunter_icon.png",
     "base_health": 200,
     "base_health_regen": 1.25,
@@ -2203,7 +2203,7 @@
       "Carry",
       "Escape"
     ],
-    "img": "/apps/dota2/images/heroes/weaver_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_weaver/card_icon.png",
     "icon": "/apps/dota2/images/heroes/weaver_icon.png",
     "base_health": 200,
     "base_health_regen": 1,
@@ -2239,7 +2239,7 @@
       "Pusher",
       "Disabler"
     ],
-    "img": "/apps/dota2/images/heroes/jakiro_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_jakiro/card_icon.png",
     "icon": "/apps/dota2/images/heroes/jakiro_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -2275,7 +2275,7 @@
       "Disabler",
       "Escape"
     ],
-    "img": "/apps/dota2/images/heroes/batrider_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_batrider/card_icon.png",
     "icon": "/apps/dota2/images/heroes/batrider_icon.png",
     "base_health": 200,
     "base_health_regen": 1.75,
@@ -2310,7 +2310,7 @@
       "Jungler",
       "Pusher"
     ],
-    "img": "/apps/dota2/images/heroes/chen_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_chen/card_icon.png",
     "icon": "/apps/dota2/images/heroes/chen_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -2345,7 +2345,7 @@
       "Durable",
       "Escape"
     ],
-    "img": "/apps/dota2/images/heroes/spectre_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_spectre/card_icon.png",
     "icon": "/apps/dota2/images/heroes/spectre_icon.png",
     "base_health": 200,
     "base_health_regen": 1.5,
@@ -2380,7 +2380,7 @@
       "Disabler",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/ancient_apparition_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_ancient_apparition/card_icon.png",
     "icon": "/apps/dota2/images/heroes/ancient_apparition_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -2417,7 +2417,7 @@
       "Durable",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/doom_bringer_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_doom_bringer/card_icon.png",
     "icon": "/apps/dota2/images/heroes/doom_bringer_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -2453,7 +2453,7 @@
       "Durable",
       "Disabler"
     ],
-    "img": "/apps/dota2/images/heroes/ursa_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_ursa/card_icon.png",
     "icon": "/apps/dota2/images/heroes/ursa_icon.png",
     "base_health": 200,
     "base_health_regen": 0.5,
@@ -2490,7 +2490,7 @@
       "Durable",
       "Escape"
     ],
-    "img": "/apps/dota2/images/heroes/spirit_breaker_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_spirit_breaker/card_icon.png",
     "icon": "/apps/dota2/images/heroes/spirit_breaker_icon.png",
     "base_health": 200,
     "base_health_regen": 1.25,
@@ -2525,7 +2525,7 @@
       "Nuker",
       "Disabler"
     ],
-    "img": "/apps/dota2/images/heroes/gyrocopter_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_gyrocopter/card_icon.png",
     "icon": "/apps/dota2/images/heroes/gyrocopter_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -2563,7 +2563,7 @@
       "Initiator",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/alchemist_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_alchemist/card_icon.png",
     "icon": "/apps/dota2/images/heroes/alchemist_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -2600,7 +2600,7 @@
       "Escape",
       "Pusher"
     ],
-    "img": "/apps/dota2/images/heroes/invoker_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_invoker/card_icon.png",
     "icon": "/apps/dota2/images/heroes/invoker_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -2637,7 +2637,7 @@
       "Initiator",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/silencer_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_silencer/card_icon.png",
     "icon": "/apps/dota2/images/heroes/silencer_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -2672,7 +2672,7 @@
       "Nuker",
       "Disabler"
     ],
-    "img": "/apps/dota2/images/heroes/obsidian_destroyer_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_obsidian_destroyer/card_icon.png",
     "icon": "/apps/dota2/images/heroes/obsidian_destroyer_icon.png",
     "base_health": 200,
     "base_health_regen": 1,
@@ -2709,7 +2709,7 @@
       "Durable",
       "Escape"
     ],
-    "img": "/apps/dota2/images/heroes/lycan_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_lycan/card_icon.png",
     "icon": "/apps/dota2/images/heroes/lycan_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -2746,7 +2746,7 @@
       "Disabler",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/brewmaster_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_brewmaster/card_icon.png",
     "icon": "/apps/dota2/images/heroes/brewmaster_icon.png",
     "base_health": 200,
     "base_health_regen": 0.5,
@@ -2782,7 +2782,7 @@
       "Initiator",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/shadow_demon_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_shadow_demon/card_icon.png",
     "icon": "/apps/dota2/images/heroes/shadow_demon_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -2818,7 +2818,7 @@
       "Jungler",
       "Durable"
     ],
-    "img": "/apps/dota2/images/heroes/lone_druid_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_lone_druid/card_icon.png",
     "icon": "/apps/dota2/images/heroes/lone_druid_icon.png",
     "base_health": 200,
     "base_health_regen": 0.25,
@@ -2855,7 +2855,7 @@
       "Pusher",
       "Initiator"
     ],
-    "img": "/apps/dota2/images/heroes/chaos_knight_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_chaos_knight/card_icon.png",
     "icon": "/apps/dota2/images/heroes/chaos_knight_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -2893,7 +2893,7 @@
       "Initiator",
       "Pusher"
     ],
-    "img": "/apps/dota2/images/heroes/meepo_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_meepo/card_icon.png",
     "icon": "/apps/dota2/images/heroes/meepo_icon.png",
     "base_health": 200,
     "base_health_regen": 0.25,
@@ -2930,7 +2930,7 @@
       "Disabler",
       "Escape"
     ],
-    "img": "/apps/dota2/images/heroes/treant_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_treant/card_icon.png",
     "icon": "/apps/dota2/images/heroes/treant_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -2967,7 +2967,7 @@
       "Durable",
       "Initiator"
     ],
-    "img": "/apps/dota2/images/heroes/ogre_magi_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_ogre_magi/card_icon.png",
     "icon": "/apps/dota2/images/heroes/ogre_magi_icon.png",
     "base_health": 200,
     "base_health_regen": 3.25,
@@ -3003,7 +3003,7 @@
       "Disabler",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/undying_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_undying/card_icon.png",
     "icon": "/apps/dota2/images/heroes/undying_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -3038,7 +3038,7 @@
       "Disabler",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/rubick_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_rubick/card_icon.png",
     "icon": "/apps/dota2/images/heroes/rubick_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -3074,7 +3074,7 @@
       "Nuker",
       "Initiator"
     ],
-    "img": "/apps/dota2/images/heroes/disruptor_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_disruptor/card_icon.png",
     "icon": "/apps/dota2/images/heroes/disruptor_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -3110,7 +3110,7 @@
       "Initiator",
       "Escape"
     ],
-    "img": "/apps/dota2/images/heroes/nyx_assassin_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_nyx_assassin/card_icon.png",
     "icon": "/apps/dota2/images/heroes/nyx_assassin_icon.png",
     "base_health": 200,
     "base_health_regen": 2.5,
@@ -3148,7 +3148,7 @@
       "Initiator",
       "Escape"
     ],
-    "img": "/apps/dota2/images/heroes/naga_siren_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_naga_siren/card_icon.png",
     "icon": "/apps/dota2/images/heroes/naga_siren_icon.png",
     "base_health": 200,
     "base_health_regen": 1.5,
@@ -3184,7 +3184,7 @@
       "Disabler",
       "Jungler"
     ],
-    "img": "/apps/dota2/images/heroes/keeper_of_the_light_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_keeper_of_the_light/card_icon.png",
     "icon": "/apps/dota2/images/heroes/keeper_of_the_light_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -3219,7 +3219,7 @@
       "Escape",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/wisp_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_wisp/card_icon.png",
     "icon": "/apps/dota2/images/heroes/wisp_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -3256,7 +3256,7 @@
       "Disabler",
       "Pusher"
     ],
-    "img": "/apps/dota2/images/heroes/visage_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_visage/card_icon.png",
     "icon": "/apps/dota2/images/heroes/visage_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -3292,7 +3292,7 @@
       "Disabler",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/slark_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_slark/card_icon.png",
     "icon": "/apps/dota2/images/heroes/slark_icon.png",
     "base_health": 200,
     "base_health_regen": 1.75,
@@ -3327,7 +3327,7 @@
       "Disabler",
       "Durable"
     ],
-    "img": "/apps/dota2/images/heroes/medusa_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_medusa/card_icon.png",
     "icon": "/apps/dota2/images/heroes/medusa_icon.png",
     "base_health": 200,
     "base_health_regen": 0.25,
@@ -3363,7 +3363,7 @@
       "Disabler",
       "Durable"
     ],
-    "img": "/apps/dota2/images/heroes/troll_warlord_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_troll_warlord/card_icon.png",
     "icon": "/apps/dota2/images/heroes/troll_warlord_icon.png",
     "base_health": 200,
     "base_health_regen": 0.25,
@@ -3400,7 +3400,7 @@
       "Nuker",
       "Escape"
     ],
-    "img": "/apps/dota2/images/heroes/centaur_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_centaur/card_icon.png",
     "icon": "/apps/dota2/images/heroes/centaur_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -3436,7 +3436,7 @@
       "Nuker",
       "Escape"
     ],
-    "img": "/apps/dota2/images/heroes/magnataur_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_magnataur/card_icon.png",
     "icon": "/apps/dota2/images/heroes/magnataur_icon.png",
     "base_health": 200,
     "base_health_regen": 0.5,
@@ -3471,7 +3471,7 @@
       "Durable",
       "Escape"
     ],
-    "img": "/apps/dota2/images/heroes/shredder_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_shredder/card_icon.png",
     "icon": "/apps/dota2/images/heroes/shredder_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -3507,7 +3507,7 @@
       "Initiator",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/bristleback_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_bristleback/card_icon.png",
     "icon": "/apps/dota2/images/heroes/bristleback_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -3542,7 +3542,7 @@
       "Disabler",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/tusk_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_tusk/card_icon.png",
     "icon": "/apps/dota2/images/heroes/tusk_icon.png",
     "base_health": 200,
     "base_health_regen": 0.75,
@@ -3577,7 +3577,7 @@
       "Nuker",
       "Disabler"
     ],
-    "img": "/apps/dota2/images/heroes/skywrath_mage_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_skywrath_mage/card_icon.png",
     "icon": "/apps/dota2/images/heroes/skywrath_mage_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -3612,7 +3612,7 @@
       "Carry",
       "Durable"
     ],
-    "img": "/apps/dota2/images/heroes/abaddon_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_abaddon/card_icon.png",
     "icon": "/apps/dota2/images/heroes/abaddon_icon.png",
     "base_health": 200,
     "base_health_regen": 1,
@@ -3648,7 +3648,7 @@
       "Nuker",
       "Durable"
     ],
-    "img": "/apps/dota2/images/heroes/elder_titan_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_elder_titan/card_icon.png",
     "icon": "/apps/dota2/images/heroes/elder_titan_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -3685,7 +3685,7 @@
       "Durable",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/legion_commander_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_legion_commander/card_icon.png",
     "icon": "/apps/dota2/images/heroes/legion_commander_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -3719,7 +3719,7 @@
       "Nuker",
       "Disabler"
     ],
-    "img": "/apps/dota2/images/heroes/techies_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_techies/card_icon.png",
     "icon": "/apps/dota2/images/heroes/techies_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -3756,7 +3756,7 @@
       "Disabler",
       "Initiator"
     ],
-    "img": "/apps/dota2/images/heroes/ember_spirit_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_ember_spirit/card_icon.png",
     "icon": "/apps/dota2/images/heroes/ember_spirit_icon.png",
     "base_health": 200,
     "base_health_regen": 0.5,
@@ -3793,7 +3793,7 @@
       "Initiator",
       "Durable"
     ],
-    "img": "/apps/dota2/images/heroes/earth_spirit_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_earth_spirit/card_icon.png",
     "icon": "/apps/dota2/images/heroes/earth_spirit_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -3830,7 +3830,7 @@
       "Durable",
       "Escape"
     ],
-    "img": "/apps/dota2/images/heroes/abyssal_underlord_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_abyssal_underlord/card_icon.png",
     "icon": "/apps/dota2/images/heroes/abyssal_underlord_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -3865,7 +3865,7 @@
       "Pusher",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/terrorblade_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_terrorblade/card_icon.png",
     "icon": "/apps/dota2/images/heroes/terrorblade_icon.png",
     "base_health": 200,
     "base_health_regen": 1,
@@ -3902,7 +3902,7 @@
       "Escape",
       "Disabler"
     ],
-    "img": "/apps/dota2/images/heroes/phoenix_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_phoenix/card_icon.png",
     "icon": "/apps/dota2/images/heroes/phoenix_icon.png",
     "base_health": 200,
     "base_health_regen": 1,
@@ -3938,7 +3938,7 @@
       "Disabler",
       "Escape"
     ],
-    "img": "/apps/dota2/images/heroes/oracle_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_oracle/card_icon.png",
     "icon": "/apps/dota2/images/heroes/oracle_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -3973,7 +3973,7 @@
       "Disabler",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/winter_wyvern_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_winter_wyvern/card_icon.png",
     "icon": "/apps/dota2/images/heroes/winter_wyvern_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -4008,7 +4008,7 @@
       "Escape",
       "Nuker"
     ],
-    "img": "/apps/dota2/images/heroes/arc_warden_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_arc_warden/card_icon.png",
     "icon": "/apps/dota2/images/heroes/arc_warden_icon.png",
     "base_health": 200,
     "base_health_regen": 0.25,
@@ -4044,7 +4044,7 @@
       "Disabler",
       "Initiator"
     ],
-    "img": "/apps/dota2/images/heroes/monkey_king_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_monkey_king/card_icon.png",
     "icon": "/apps/dota2/images/heroes/monkey_king_icon.png",
     "base_health": 200,
     "base_health_regen": 1,
@@ -4080,7 +4080,7 @@
       "Disabler",
       "Escape"
     ],
-    "img": "/apps/dota2/images/heroes/dark_willow_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_dark_willow/card_icon.png",
     "icon": "/apps/dota2/images/heroes/dark_willow_icon.png",
     "base_health": 200,
     "base_health_regen": 0.5,
@@ -4118,7 +4118,7 @@
       "Escape",
       "Initiator"
     ],
-    "img": "/apps/dota2/images/heroes/pangolier_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_pangolier/card_icon.png",
     "icon": "/apps/dota2/images/heroes/pangolier_icon.png",
     "base_health": 200,
     "base_health_regen": 0.25,
@@ -4154,7 +4154,7 @@
       "Disabler",
       "Escape"
     ],
-    "img": "/apps/dota2/images/heroes/grimstroke_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_grimstroke/card_icon.png",
     "icon": "/apps/dota2/images/heroes/grimstroke_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -4189,7 +4189,7 @@
       "Escape",
       "Disabler"
     ],
-    "img": "/apps/dota2/images/heroes/hoodwink_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_hoodwink/card_icon.png",
     "icon": "/apps/dota2/images/heroes/hoodwink_icon.png",
     "base_health": 200,
     "base_health_regen": 0.25,
@@ -4225,7 +4225,7 @@
       "Nuker",
       "Disabler"
     ],
-    "img": "/apps/dota2/images/heroes/void_spirit_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_void_spirit/card_icon.png",
     "icon": "/apps/dota2/images/heroes/void_spirit_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -4261,7 +4261,7 @@
       "Disabler",
       "Escape"
     ],
-    "img": "/apps/dota2/images/heroes/snapfire_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_snapfire/card_icon.png",
     "icon": "/apps/dota2/images/heroes/snapfire_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -4297,7 +4297,7 @@
       "Disabler",
       "Durable"
     ],
-    "img": "/apps/dota2/images/heroes/mars_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_mars/card_icon.png",
     "icon": "/apps/dota2/images/heroes/mars_icon.png",
     "base_health": 200,
     "base_health_regen": null,
@@ -4331,7 +4331,7 @@
       "Carry",
       "Durable"
     ],
-    "img": "/apps/dota2/images/heroes/dawnbreaker_full.png?",
+    "img": "/images/hero-icons/npc_dota_hero_dawnbreaker/card_icon.png",
     "icon": "/apps/dota2/images/heroes/dawnbreaker_icon.png",
     "base_health": 200,
     "base_health_regen": null,
