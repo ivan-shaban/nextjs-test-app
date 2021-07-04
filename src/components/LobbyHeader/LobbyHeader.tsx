@@ -24,7 +24,10 @@ import {
     Routes,
     SUB_SECTIONS,
 } from '../../constants/routes'
-import { reservePath } from '../../helpers/routers'
+import {
+    reserveHeroesPath,
+    reservePath,
+} from '../../helpers/routers'
 import { HEROES_TITLE } from '../pages/Heroes/translations'
 import { STORE_TITLE } from '../pages/Store/translations'
 import { LEARN_TITLE } from '../pages/Learn/translations'
@@ -46,7 +49,7 @@ export const tabs: TabData[] = [{
 }, {
     id: SUB_SECTIONS.HEROES,
     title: HEROES_TITLE,
-    link: reservePath(Routes.LOBBY, { subSection: SUB_SECTIONS.HEROES }),
+    link: reserveHeroesPath(),
 }, {
     id: SUB_SECTIONS.STORE,
     title: STORE_TITLE,

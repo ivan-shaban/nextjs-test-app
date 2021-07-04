@@ -17,6 +17,7 @@ export enum SUB_SECTIONS {
 export enum Routes {
     LOGIN = '/login',
     LOBBY = '/lobby/:subSection?',
+    HEROES = '/lobby/heroes/:heroId?',
     SETTINGS = '/settings',
     ARENA = '/arena',
 }

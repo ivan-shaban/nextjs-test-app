@@ -8,7 +8,6 @@ import {
     createStyles,
     Grid,
     makeStyles,
-    Paper,
     Theme,
 } from '@material-ui/core'
 
@@ -24,6 +23,7 @@ import { Attribute } from '../../../constants/heroes'
 import { LobbyHeader } from '../../LobbyHeader/LobbyHeader'
 
 import { ATTRIBUTE } from './translations'
+import { HeroCard } from './components/HeroCard'
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -80,34 +80,16 @@ export const HeroesPage: FC<Props> = ({ heroes }) => {
             <div className={classes.grid}>
                 <Grid container spacing={1}>
                     <Grid className={classes.section} item xs={12}>{ATTRIBUTE[Attribute.STRENGTH]}</Grid>
-                    {strengthHeroes.map(({
-                        id, localized_name, name,
-                    }) => (
-                        <Grid item xs={1} key={`hero-${id}`}>
-                            <Paper className={classes.paper}>
-                                {localized_name}
-                            </Paper>
-                        </Grid>
+                    {strengthHeroes.map((data) => (
+                        <HeroCard data={data} key={`hero-${data.id}`} />
                     ))}
                     <Grid className={classes.section} item xs={12}>{ATTRIBUTE[Attribute.AGILITY]}</Grid>
-                    {agilityHeroes.map(({
-                        id, localized_name, name,
-                    }) => (
-                        <Grid item xs={1} key={`hero-${id}`}>
-                            <Paper className={classes.paper}>
-                                {localized_name}
-                            </Paper>
-                        </Grid>
+                    {agilityHeroes.map((data) => (
+                        <HeroCard data={data} key={`hero-${data.id}`} />
                     ))}
                     <Grid className={classes.section} item xs={12}>{ATTRIBUTE[Attribute.INTELLECT]}</Grid>
-                    {intellectHeroes.map(({
-                        id, localized_name, name,
-                    }) => (
-                        <Grid item xs={1} key={`hero-${id}`}>
-                            <Paper className={classes.paper}>
-                                {localized_name}
-                            </Paper>
-                        </Grid>
+                    {intellectHeroes.map((data) => (
+                        <HeroCard data={data} key={`hero-${data.id}`} />
                     ))}
                 </Grid>
             </div>
