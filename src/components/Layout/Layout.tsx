@@ -7,16 +7,21 @@ import { useSession } from 'next-auth/client'
 import { useRouter } from 'next/router'
 
 import { reservePath } from '../../helpers/routers'
-import { Routes } from '../../constants/routes'
+import {
+    Routes,
+    SUB_SECTIONS,
+} from '../../constants/routes'
+import { LobbyHeader } from '../LobbyHeader/LobbyHeader'
 
 export interface Props {
     readonly isCentered?: boolean
     readonly isProtected?: boolean
+    readonly currentPage?: SUB_SECTIONS
 }
 
 const useStyles = makeStyles({
     base: ({ isCentered }: Props) => ({
-        position: 'absolute',
+        position: isCentered ? 'absolute' : 'unset',
         top: 0,
         right: 0,
         bottom: 0,
@@ -24,8 +29,8 @@ const useStyles = makeStyles({
         display: 'flex',
         minWidth: 1024,
         flexDirection: 'column',
-        alignItems: isCentered ? 'center' : 'initial',
-        justifyContent: isCentered ? 'center' : 'initial',
+        alignItems: 'center',
+        justifyContent: 'center',
         backgroundColor: '#f5f5f5',
         userSelect: 'none',
     }),
@@ -43,6 +48,11 @@ export const Layout: React.FC<PropsWithChildren<Props>> = (props) => {
     }, [loading])
 
     return (
-        <div className={classes.base}>{props.children}</div>
+        <>
+            {!!props.currentPage && <LobbyHeader currentPage={props.currentPage} />}
+            <div className={classes.base}>
+                {props.children}
+            </div>
+        </>
     )
 }

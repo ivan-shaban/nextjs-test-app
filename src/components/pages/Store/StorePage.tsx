@@ -10,7 +10,6 @@ import {
 import { reservePath } from '../../../helpers/routers'
 import { Layout } from '../../Layout/Layout'
 import { FIND_GAME } from '../Lobby/translations'
-import { LobbyHeader } from '../../LobbyHeader/LobbyHeader'
 
 import { STORE_TITLE } from './translations'
 
@@ -29,8 +28,7 @@ export function StorePage() {
         router.push(reservePath(Routes.LOBBY, { subSection: SUB_SECTIONS.WAITING }))
 
     return (
-        <Layout isCentered={true} isProtected={true}>
-            <LobbyHeader currentPage={SUB_SECTIONS.STORE} />
+        <Layout isCentered={true} isProtected={true} currentPage={SUB_SECTIONS.STORE}>
             <Button
                 className={classes.findGameButton}
                 color="secondary"
