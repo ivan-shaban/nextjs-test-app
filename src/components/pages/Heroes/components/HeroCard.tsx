@@ -13,7 +13,7 @@ import { Hero } from '../../../../data/types/heroes'
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
-        paper: (hero:Hero) => ({
+        paper: (hero: Hero) => ({
             padding: theme.spacing(2),
             textAlign: 'center',
             color: theme.palette.text.secondary,
@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme: Theme) =>
             cursor: 'pointer',
             backgroundPosition: 'center',
             // backgroundImage: `url("/images/hero-icons/${hero.id}/card.png")`,
-            backgroundImage: 'url("/images/hero-icons/Crystal_Maiden_icon.png")',
+            backgroundImage: `url("${hero.img}")`,
         }),
     })
 )
