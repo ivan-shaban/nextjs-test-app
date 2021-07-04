@@ -20,7 +20,6 @@ const useStyles = makeStyles((theme: Theme) =>
             height: 144,
             cursor: 'pointer',
             backgroundPosition: 'center',
-            // backgroundImage: `url("/images/hero-icons/${hero.id}/card.png")`,
             backgroundImage: `url("${hero.img}")`,
         }),
     })

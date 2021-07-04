@@ -40,6 +40,8 @@ const useStyles = makeStyles((theme) => ({
         position: 'absolute',
         right: theme.offsets.buttonBorderOffset,
     },
+    // little hack to fix other elements layout
+    offset: theme.mixins.toolbar,
 }))
 
 export const tabs: TabData[] = [{
@@ -91,41 +93,43 @@ export const LobbyHeader: FC<Props> = ({ currentPage }) => {
     }
 
     return (
-        <AppBar position="fixed">
-            <Toolbar>
-                <TabsView data={tabsData} />
-                <div className={classes.logoutButton}>
-                    <IconButton
-                        aria-label="account of current user"
-                        aria-controls="menu-appbar"
-                        aria-haspopup="true"
-                        onClick={handleMenu}
-                        color="inherit"
-                    >
-                        <AccountCircle />
-                    </IconButton>
-                    <Menu
-                        id="menu-appbar"
-                        anchorEl={anchorEl}
-                        anchorOrigin={{
-                            vertical: 'top',
-                            horizontal: 'right',
-                        }}
-                        keepMounted
-                        transformOrigin={{
-                            vertical: 'top',
-                            horizontal: 'right',
-                        }}
-                        open={isOpen}
-                        onClose={handleClose}
-                    >
-                        <MenuItem onClick={gotoProfile}>{PROFILE_TITLE}</MenuItem>
-                        <MenuItem onClick={gotoSettings}>{SETTINGS_TITLE}</MenuItem>
-                        <MenuItem onClick={handleLogoutClick}>{LOGOUT}</MenuItem>
-                    </Menu>
-                </div>
-            </Toolbar>
-        </AppBar>
-
+        <>
+            <AppBar>
+                <Toolbar>
+                    <TabsView data={tabsData} />
+                    <div className={classes.logoutButton}>
+                        <IconButton
+                            aria-label="account of current user"
+                            aria-controls="menu-appbar"
+                            aria-haspopup="true"
+                            onClick={handleMenu}
+                            color="inherit"
+                        >
+                            <AccountCircle />
+                        </IconButton>
+                        <Menu
+                            id="menu-appbar"
+                            anchorEl={anchorEl}
+                            anchorOrigin={{
+                                vertical: 'top',
+                                horizontal: 'right',
+                            }}
+                            keepMounted
+                            transformOrigin={{
+                                vertical: 'top',
+                                horizontal: 'right',
+                            }}
+                            open={isOpen}
+                            onClose={handleClose}
+                        >
+                            <MenuItem onClick={gotoProfile}>{PROFILE_TITLE}</MenuItem>
+                            <MenuItem onClick={gotoSettings}>{SETTINGS_TITLE}</MenuItem>
+                            <MenuItem onClick={handleLogoutClick}>{LOGOUT}</MenuItem>
+                        </Menu>
+                    </div>
+                </Toolbar>
+            </AppBar>
+            <div className={classes.offset} />
+        </>
     )
 }

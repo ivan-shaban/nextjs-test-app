@@ -20,7 +20,6 @@ import { Layout } from '../../Layout/Layout'
 import { FIND_GAME } from '../Lobby/translations'
 import { Hero } from '../../../data/types/heroes'
 import { Attribute } from '../../../constants/heroes'
-import { LobbyHeader } from '../../LobbyHeader/LobbyHeader'
 
 import { ATTRIBUTE } from './translations'
 import { HeroCard } from './components/HeroCard'
@@ -34,20 +33,11 @@ const useStyles = makeStyles((theme: Theme) =>
         },
         grid: {
             width: '70%',
-            margin: '0 auto',
-            padding: '150px 0',
+            padding: '80px 0',
         },
         section: {
             paddingTop: theme.spacing(2),
             paddingLeft: 6,
-        },
-        paper: {
-            padding: theme.spacing(2),
-            textAlign: 'center',
-            color: theme.palette.text.secondary,
-            height: 144,
-            backgroundPosition: 'center',
-            backgroundImage: 'url("/images/hero-icons/Crystal_Maiden_icon.png")',
         },
     })
 )
@@ -66,8 +56,7 @@ export const HeroesPage: FC<Props> = ({ heroes }) => {
         router.push(reservePath(Routes.LOBBY, { subSection: SUB_SECTIONS.WAITING }))
 
     return (
-        <Layout isProtected={true}>
-            <LobbyHeader currentPage={SUB_SECTIONS.HEROES} />
+        <Layout isProtected={true} currentPage={SUB_SECTIONS.HEROES}>
             <Button
                 className={classes.findGameButton}
                 color="secondary"

@@ -9,7 +9,6 @@ import {
 } from '../../../constants/routes'
 import { reservePath } from '../../../helpers/routers'
 import { Layout } from '../../Layout/Layout'
-import { LobbyHeader } from '../../LobbyHeader/LobbyHeader'
 
 import {
     FIND_GAME,
@@ -33,8 +32,7 @@ export function LobbyPage() {
         router.push(reservePath(Routes.LOBBY, { subSection: SUB_SECTIONS.WAITING }))
 
     return (
-        <Layout isCentered={true} isProtected={true}>
-            <LobbyHeader currentPage={SUB_SECTIONS.MAIN} />
+        <Layout isCentered={true} isProtected={true} currentPage={SUB_SECTIONS.MAIN}>
             <Button
                 className={classes.findGameButton}
                 color="secondary"

@@ -1,5 +1,5 @@
-import { HeroesPage } from '../../components/pages/Heroes/HeroesPage'
-import { getAllHeroesByPrimaryAttr } from '../../lib/heroes'
+import { HeroesPage } from '../../../components/pages/Heroes/HeroesPage'
+import { getAllHeroesByPrimaryAttr } from '../../../lib/heroes'
 
 export default HeroesPage
 

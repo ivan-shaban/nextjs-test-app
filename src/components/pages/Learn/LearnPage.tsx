@@ -10,7 +10,6 @@ import {
 import { reservePath } from '../../../helpers/routers'
 import { Layout } from '../../Layout/Layout'
 import { FIND_GAME } from '../Lobby/translations'
-import { LobbyHeader } from '../../LobbyHeader/LobbyHeader'
 
 import { LEARN_TITLE } from './translations'
 
@@ -29,8 +28,7 @@ export function LearnPage() {
         router.push(reservePath(Routes.LOBBY, { subSection: SUB_SECTIONS.WAITING }))
 
     return (
-        <Layout isCentered={true} isProtected={true}>
-            <LobbyHeader currentPage={SUB_SECTIONS.LEARN} />
+        <Layout isCentered={true} isProtected={true} currentPage={SUB_SECTIONS.LEARN}>
             <Button
                 className={classes.findGameButton}
                 color="secondary"
