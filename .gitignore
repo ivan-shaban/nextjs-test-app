@@ -25,5 +25,5 @@ yarn-debug.log*
 yarn-error.log*
 
 .env
-.env.test
-.env.local
+.env.test*
+.env.local*

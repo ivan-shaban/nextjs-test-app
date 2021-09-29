@@ -6,12 +6,12 @@
     "check:types": "tsc --noEmit",
     "check:eslint": "eslint src/**/*.{ts,tsx}",
     "fix:eslint": "yarn check:eslint --fix",
-    "predev": "yarn --network-timeout 100000",
     "dev": "next dev",
-    "prebuild": "yarn --network-timeout 100000",
     "build": "next build",
-    "prestart": "yarn --network-timeout 100000",
     "start": "next start",
+    "prod": "yarn build && yarn start",
+    "docker:dev": "docker-compose -f ../docker-compose.yml -f ../docker-compose.dev.yml up",
+    "docker:prod": "docker-compose -f ../docker-compose.yml -f ../docker-compose.prod.yml up",
     "build:translations": "formatjs extract \"src/**/translations.tsx\" --format simple --out-file public/translations/ru.json"
   },
   "dependencies": {
